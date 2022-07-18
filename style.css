@@ -1,11 +1,33 @@
+@font-face {
+    font-family: "Merienda";
+    src: url("fonts/Merienda-Regular.woff2") format("woff2");
+} /* Commentaire SEO : */
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
+} /* Commentaire SEO : la police correspond à celle qui est identifiée dans le sous-titre du logo original. Il s'agit d'une police à la fois lisible et au design moderne. */
+
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;    
 }
+
+@media (max-width: 1023px) {
+    body {
+        background-size: 120%;
+    }
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    body {
+        background-size: 100%;
+    }
+} /* Commentaire SEO : */
 
 a,
 button {
@@ -88,12 +110,12 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
+} /* Commentaire SEO : */ /* A supprimer. */
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+} /* Commentaire SEO : */ /* A supprimer. */
 
 .b-parallax {
     background-attachment: fixed;
@@ -126,8 +148,8 @@ a:hover {
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
+/* .d-bloc h1 a, */
+/* .d-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
@@ -143,8 +165,8 @@ a:hover {
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
+/* .d-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* .d-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 .d-bloc h3 a:hover,
 .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
@@ -224,8 +246,8 @@ a:hover {
 .l-bloc a .icon-md,
 .l-bloc a .icon-lg,
 .l-bloc a .icon-xl,
-.l-bloc h1 a,
-.l-bloc h2 a,
+/* .l-bloc h1 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* .l-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 .l-bloc h3 a,
 .l-bloc h4 a,
 .l-bloc h5 a,
@@ -242,8 +264,8 @@ a:hover {
 .l-bloc a:hover .icon-md,
 .l-bloc a:hover .icon-lg,
 .l-bloc a:hover .icon-xl,
-.l-bloc h1 a:hover,
-.l-bloc h2 a:hover,
+/* .l-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* .l-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 .l-bloc h3 a:hover,
 .l-bloc h4 a:hover,
 .l-bloc h5 a:hover,
@@ -283,9 +305,85 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
+header {
+    z-index: 1;    
+    overflow: visible;    
+} /* Commentaire SEO : */
+
+@media (max-width: 1023px) {
+    header {
+        transform: translate(0, -26%);
+    }
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    header {
+        transform: translate(0, -18%);        
+    }
+} /* Commentaire SEO : */
+
+.panther-icon {
+    position: relative;
+    top: 37%;    
+    background-color: #FFFFFF;
+} /* Commentaire SEO : style créér pour le nouveau logo de La Panthere.
+La taille respecte la taille originale en format mobile (largeur de la fenêtre du navigateur réduite au maximum),
+puis s'adapte en s'agrandissant en fonction de la résolution. */
+
+@media (max-width: 1023px) {
+    .panther-icon {
+        width: 21vw;
+        height: 21vw;
+        border-radius: 9.5vw; /* Commentaire SEO : le logo original n'est pas tout à fait rond. */
+        padding: 3vw;
+    }
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    .panther-icon {
+        width: 15.5em;
+        height: 15.5em;
+        border-radius: 7em; /* Commentaire SEO : le logo original n'est pas tout à fait rond. */
+        padding: 2.2em;  
+    }
+} /* Commentaire SEO : */
+
+/* #bloc-1-hero h1 {
     font-size: 32px;
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+
+h1 {
+    font-family: "Merienda", cursive, serif;
+    font-size: 7.5vw; /* 6.5vw */
+    color: #F4861E;
+    line-height: 1.2em;
+    filter: drop-shadow(0 0 0.3vw #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 5.5em;
+    }
+} /* Commentaire SEO : */
+
+header h2 {
+    /* width: fit-content; */
+    margin-block-start: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet et permettent de s'approcher du logo original. */
+    margin-block-end: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet. */
+    font-family: "WorkSans", Helvetica, sans-serif;
+    font-size: 3.5vw; /* 3vw */
+    color: #F4861E;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 0.3vw #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
 }
+
+@media (min-width: 1024px) {
+    header h2 {
+        font-size: 2.5em;
+    }
+} /* Commentaire SEO : */
+
+
 
 .navbar {
     margin-bottom: 0;
@@ -445,9 +543,9 @@ nav .caret {
     margin-bottom: 40px;
 }
 
-.btn {
+/* .btn {
     margin: 0 5px 5px 0;
-}
+} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
 .btn.pull-right {
     margin: 0 0 5px 5px;
@@ -464,16 +562,16 @@ button {
     outline: none!important;
 }
 
-.btn-rd {
+/* .btn-rd {
     border-radius: 40px;
-}
+} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
-.btn-clean {
+/* .btn-clean {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-}
+} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
 .icon-md {
     font-size: 30px!important;
@@ -639,8 +737,8 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
+/* h1, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* h2, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 h3,
 h4,
 h5,
@@ -651,16 +749,18 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    /* color: #575757!important; */
+    color: #575757;
+    /* Commentaire SEO : suppression de "!important" afin de pouvoir appliquer la couleur de "header h2". */
 }
 
 .container {
     max-width: 1000px;
 }
 
-.hero-bloc-text {
+/* .hero-bloc-text {
     font-size: 38px;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 .hero-bloc-text-sub {
     font-size: 36px;
@@ -682,32 +782,148 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    /* margin: auto auto auto auto; Commentaire SEO : */
+    margin: auto;
 }
 
-.h1 {
+/* .h1 {
     font-size: 20px;
     font-family: "Open Sans";
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
-.cta-hero {
+/* .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+} *//* Commentaire SEO : suppression avec la création de .contact (<aside>) */
+
+.contact {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    width: fit-content;
+} /* Commentaire SEO : bouton unique pour accéder au formulaire de contact, présent tout au long de la page, en suivant son défilement.
+Tous les autres boutons sont éliminés. */
+
+@media (max-width: 1023px) {
+    .contact {
+        transform: translate(0, 50%);
+    }
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    .contact {
+        transform: translate(0, 60%);
+    }
+} /* Commentaire SEO : */
+
+.contact-button-mobile {
+    z-index: 1;
+    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    margin: 1vw 0 0 1vw;
+    width: 10vw;
+    height: 10vw;
+    border: none;
+    border-radius: 50vw;
+    box-shadow: 0 0 2vw 0 #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
+    padding: 3vw;
+    fill: #FFFFFF
+} /* Commentaire SEO : */
+
+.contact-button-mobile:hover {
+    box-shadow: 0 0vw 1vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
 }
+
+.contact-button-mobile:active {
+    transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
+}
+
+.contact-button-mobile__hover-effect {
+    z-index: -1;
+    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    border-radius: 50vw;
+    background: #F69E4B; /* Commentaire SEO : Tints of Trendy Orange Color (https://www.color-name.com/trendy-orange.color). */
+    opacity: 0; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    transition: opacity 350ms ease-in-out;    
+}
+
+.contact-button-mobile:hover .contact-button-mobile__hover-effect {
+    opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+.contact-button-desktop {
+    z-index: 1;
+    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    margin: 3vw 0 0 3vw;
+    border: none;
+    border-radius: 10vw;
+    box-shadow: 0 0vw 1.5vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
+    padding: .9em 1.5em .9em 1.5em; /* 1.35vw 3.15vw 1.35vw 3.15vw; /* Commentaire SEO : adaptation responsive ; prise en compte de proportions UX design. */
+    font-family: "WorkSans";
+    font-size: 1.2em; /* 2vw; /* Commentaire SEO : adaptation responsive et lisibilité. */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: #FFFFFF;
+}
+
+.contact-button-desktop:hover {
+    box-shadow: 0 0vw 0.8vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
+}
+
+.contact-button-desktop:active {
+    transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
+}
+
+.contact-button-desktop__hover-effect {
+    z-index: -1;
+    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10vw;
+    background: #F69E4B; /* Commentaire SEO : Tints of Trendy Orange Color (https://www.color-name.com/trendy-orange.color). */
+    opacity: 0; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    transition: opacity 350ms ease-in-out;
+}
+
+.contact-button-desktop:hover .contact-button-desktop__hover-effect {
+    opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+@media (max-width: 1023px) {
+    .contact-button-desktop {
+        display: none;
+    }
+} /* Commentaire SEO : */
+
+@media (min-width: 1024px) {
+    .contact-button-mobile {
+        display: none;
+    }
+} /* Commentaire SEO : */
 
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
 
-h2 {
+/* h2 {
     font-size: 22px;
     line-height: 1.4em;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 h3 {
     font-size: 15px;
@@ -722,9 +938,9 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
+/* h1 {
     color: #333333!important;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 h4 {
     color: #333333!important;
@@ -778,7 +994,7 @@ h4 {
     color: #F3976C!important;
 }
 
-.btn-atomic-tangerine {
+/* .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
 }
@@ -786,7 +1002,7 @@ h4 {
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
-}
+} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
 .ltc-white {
     color: #FFFFFF!important;
@@ -819,7 +1035,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
-}
+} /* Commentaire SEO : transfert dans le fichier html. */ /* A supprimer. */
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
@@ -869,7 +1085,7 @@ h4 {
     }
     .page-container,
     #hero-bloc {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */ /* Commentaire SEO : suppression pour ne pas couper l'icône du header. */
         position: relative;
     }
     .bloc {
@@ -891,11 +1107,11 @@ h4 {
 
 @media (max-width: 767px) {
     .page-container {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */ /* Commentaire SEO : suppression pour ne pas couper l'icône du header. */
         position: relative;
     }
-    h1,
-    h2,
+    /* h1, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
+    /* h2, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
     h3,
     h4,
     h5,
@@ -1010,9 +1226,9 @@ h4 {
     .voffset-lg {
         margin-top: 30px;
     }
-    form {
+    /*form {
         padding: 5px;
-    }
+    } */ /* Commentaire SEO : sélecteur supprimé pour éviter le décalage entre 768 et 1023px. */
     .close-lightbox {
         display: inline-block;
     }
