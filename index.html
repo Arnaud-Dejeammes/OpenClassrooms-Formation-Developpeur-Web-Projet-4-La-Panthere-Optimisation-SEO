@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
-		<meta name="description" content="">
+		<meta name="description" content="La Panthère est une agence de Web Design qui aide les entreprises à devenir attractives et visibles sur Internet.">
+		<!-- Commentaire SEO : la balise <meta name="description" content="[...] a été complétée avec le contenu introductif du bloc qui présente les services de l'agence. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
@@ -38,8 +39,10 @@
 				<!-- <div class="text-center"> -->
 					<!-- <a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero"> -->					
 						<!-- <button class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero"> -->
-						<button class="contact-button-desktop">
-							Contact
+						<button class="contact-button-desktop" aria-label="Contact">
+							<span>
+								Contact
+							</span>
 							<span class="contact-button-desktop__hover-effect">								
 							</span>
 						</button>
@@ -50,7 +53,7 @@
 				Evite les erreurs du type "The element a must not appear as a descendant of the button element."
 				ou "The element button must not appear as a descendant of the a element." -->
 
-				<button class="contact-button-mobile">
+				<button class="contact-button-mobile" aria-label="Contact"> <!-- Commentaire SEO : l'attribut "aria-label permet de rendre accessible les boutons qui n'ont pas d'étiquette (label) descriptive. "-->
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 					<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
 						<path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
@@ -195,56 +198,112 @@
 
 			<!-- bloc-2-services -->
 			<div class="bloc bgc-white l-bloc" id="bloc-2-services">
-				<div class="container bloc-md">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
+				<!-- <div class="container bloc-md"> -->
+					<!-- <div class="row"> --> <!-- Commentaire SEO : suppression de la <div> pour remaniement de style. -->
+						<!-- <div class="col-sm-12 text-center"> --> <!-- Commentaire SEO : suppression de la <div> pour remaniement de style. -->
+						<div class="definition">
+							<span>
+								<strong>La Panthère</strong> est une <em>agence de Web Design</em> qui <em>aide les entreprises</em> à devenir <em>attractives</em> et <em>visibles</em> sur <em>Internet</em>.
+							</span>
 						</div>
-					</div>
-					<div class="row voffset-lg med-width-whitespace">
-						<div class="col-sm-4">
-							<div class="text-center">
-								<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg">								
-								</span>
-							</div>
-							<h3 class="mg-md text-center">
-								Web design
+							<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" /> -->
+							<!-- Commentaire SEO : le texte se retrouve dans la balise <meta name="description" content="[...]. --> <!-- Commentaire SEO : suppression de l'image pour la remplacer par du texte. -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="row voffset-lg med-width-whitespace"> --> <!-- Commentaire SEO : redéfinition du nom et du style de la <div>. -->
+					<div id="services-description">
+						<!-- <div class="col-sm-4">
+							<div class="text-center"> --> <!-- Commentaire SEO : suppression des <div> pour une requalification plus spécifique (<article>) et une refonte du style. -->
+						<article class="service"> <!-- Commentaire SEO : création de la balise pour répondre à une meilleure structuration et refondre le style. -->
+								<!-- <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg">
+								</span>  --> <!-- Commentaire SEO : suppression des icônes sur le formet et-line pour les remplacer par le format svg. -->
+								<svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="84" height="64" viewBox="0 0 42 32" aria-label="Une fenêtre de navigateur"> <!-- Commentaire SEO : ajout de l'attribut aria-label pour l'accessibilité ; taille originale : width="42" height="32". -->
+									<g> <!-- Commentaire SEO : suppression de l'attribut fill="#828282", remplacé par la couleur dans style.css. -->
+										<path d="M41.5 10a.5.5 0 00-.5.5v20a.5.5 0 01-.5.5h-39a.5.5 0 01-.5-.5v-20a.5.5 0 00-1 0v20c0 .827.673 1.5 1.5 1.5h39c.827 0 1.5-.673 1.5-1.5v-20a.5.5 0 00-.5-.5zM40.5 0h-39C.673 0 0 .673 0 1.5v6a.5.5 0 00.5.5h41a.5.5 0 00.5-.5v-6c0-.827-.673-1.5-1.5-1.5zm.5 7H1V1.5a.5.5 0 01.5-.5h39a.5.5 0 01.5.5V7z"/><path d="M17.5 28a.5.5 0 00.5-.5v-16a.5.5 0 00-.5-.5h-13a.5.5 0 00-.5.5v16a.5.5 0 00.5.5h13zM5 12h12v15H5V12zM22.5 15h15a.5.5 0 000-1h-15a.5.5 0 000 1zM22.5 20h15a.5.5 0 000-1h-15a.5.5 0 000 1zM22.5 25h15a.5.5 0 000-1h-15a.5.5 0 000 1z"/>
+										<circle cx="4" cy="4" r="1"/>
+										<circle cx="8" cy="4" r="1"/>
+										<circle cx="12" cy="4" r="1"/>
+									</g>
+								</svg> <!-- Commentaire SEO : bénéfices du svg. -->
+								<!-- <a href="https://iconscout.com/icons/browser" target="_blank">Browser Icon</a> by <a href="https://iconscout.com/contributors/kenny-sing" target="_blank">Kenny Sing</a> -->
+								<!-- Commentaire SEO : crédit de l'auteur de l'icône. -->
+							<!-- </div> -->
+							<!-- <h3 class="mg-md text-center"> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<h3>
+								<!-- Web design -->
+								Web Design
 							</h3>
-							<p class="text-center ">
-								Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
+							<!-- <p class="text-center "> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<p>
+								<!-- Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier. -->
+								Que votre site Web ait besoin d&rsquo;un rafraîchissement, ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fiers.
 							</p>
-						</div>
-						<div class="col-sm-4">
-							<div class="text-center">
-								<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg">								
-								</span>
-							</div>
-							<h3 class="mg-md text-center">
-								&nbsp;Stratégie
+						</article>
+						<!-- </div> -->
+						<!-- <div class="col-sm-4">
+							<div class="text-center"> --> <!-- Commentaire SEO : suppression des <div> pour une requalification plus spécifique (<article>) et une refonte du style. -->
+						<article class="service"> <!-- Commentaire SEO : création de la balise pour répondre à une meilleure structuration et refondre le style. -->
+								<!-- <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg">								
+								</span> --> <!-- Commentaire SEO : suppression des icônes sur le formet et-line pour les remplacer par le format svg. -->
+								<svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="62" height="64" viewBox="0 0 31 32" aria-label="Un tableau avec un graphique qui monte en flèche"> <!-- Commentaire SEO : ajout de l'attribut aria-label pour l'accessibilité ; taille originale : width="31" height="32". -->
+									<g> <!-- Commentaire SEO : suppression de l'attribut fill="#828282", remplacé par la couleur dans style.css. -->
+										<path d="M.5 3a.5.5 0 00-.5.5v17c0 .827.673 1.5 1.5 1.5h28c.827 0 1.5-.673 1.5-1.5v-17a.5.5 0 00-1 0v17a.5.5 0 01-.5.5h-28a.5.5 0 01-.5-.5v-17A.5.5 0 00.5 3zM32.5 0h-34a.5.5 0 000 1h34a.5.5 0 000-1z"/>
+										<path d="M11.854 8.146a.5.5 0 00-.674-.031l-6 5a.5.5 0 00.641.769l5.649-4.708 5.677 5.677a.502.502 0 00.707.001L25 7.707V11.5a.5.5 0 001 0v-5a.504.504 0 00-.309-.462A.504.504 0 0025.5 6h-5a.5.5 0 000 1h3.793L17.5 13.793l-5.646-5.647zM8.057 31.732a.5.5 0 00.675.211l6.768-3.545 6.768 3.545a.5.5 0 00.464-.886l-6.893-3.61a.494.494 0 00.161-.364V24.5a.5.5 0 00-1 0v2.583c0 .144.063.272.161.363l-6.893 3.61a.501.501 0 00-.211.676z"/>
+									</g>
+								</svg> <!-- Commentaire SEO : bénéfices du svg. -->
+								<!-- <a href="https://iconscout.com/icons/presentation" target="_blank">Presentation Icon</a> by <a href="https://iconscout.com/contributors/kenny-sing" target="_blank">Kenny Sing</a> -->
+								<!-- Commentaire SEO : crédit de l'auteur de l'icône. -->
+							<!-- </div> -->
+							<!-- <h3 class="mg-md text-center"> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<h3>
+								<!-- &nbsp;Stratégie -->
+								Stratégie
 							</h3>
-							<p class="text-center ">
-								Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
+							<!-- <p class="text-center "> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<p>
+								Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible. <!-- <br> -->
 							</p>
-						</div>
-						<div class="col-sm-4">
-							<div class="text-center">
-								<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg">								
-								</span>
-							</div>
-							<h3 class="mg-md text-center">
+						<!-- </div> -->
+						</article>
+						<!-- <div class="col-sm-4">
+							<div class="text-center"> -->  <!-- Commentaire SEO : suppression des <div> pour une requalification plus spécifique (<article>) et une refonte du style. -->
+						<article class="service">
+								<!-- <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg">								
+								</span> --> <!-- Commentaire SEO : suppression des icônes sur le formet et-line pour les remplacer par le format svg. -->
+								<svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" aria-label="Un crayon sur une feuille"> <!-- Commentaire SEO : ajout de l'attribut aria-label pour l'accessibilité ; taille originale : width="32" height="32". -->
+									<g> <!-- Commentaire SEO : suppression de l'attribut fill="#828282", remplacé par la couleur dans style.css. -->
+										<path d="M1.5 32h29c.827 0 1.5-.673 1.5-1.5v-29c0-.827-.673-1.5-1.5-1.5h-29C.673 0 0 .673 0 1.5v29c0 .827.673 1.5 1.5 1.5zM1 1.5a.5.5 0 0 1 .5-.5h29a.5.5 0 0 1 .5.5v29a.5.5 0 0 1-.5.5h-29a.5.5 0 0 1-.5-.5v-29z"/><path d="M4 28.479a.5.5 0 0 0 .143-.021l10-2.979a.504.504 0 0 0 .213-.127l10.09-10.205c.023-.024.035-.053.052-.08l3.658-3.658a1.56 1.56 0 0 0 0-2.203L22.92 3.972a1.558 1.558 0 0 0-2.202 0l-3.739 3.739c-.024.024-.036.054-.054.081L6.807 17.911a.495.495 0 0 0-.122.199l-3.16 9.715a.5.5 0 0 0 .475.654zM17.359 8.771l1.04 1.04-8.523 8.563-1.727-.392 9.21-9.211zM10.5 19.165l8.607-8.646 2.434 2.434-8.745 8.547H10.5v-2.335zm12.885-4.368l-9.246 9.352-.576-1.999 8.684-8.489 1.138 1.136zM7.493 18.859l2.007.456V22a.5.5 0 0 0 .5.5h2.624l.633 2.2-8.487 2.528 2.723-8.369zm13.932-14.18a.56.56 0 0 1 .788 0l5.235 5.235a.558.558 0 0 1 0 .789l-3.372 3.372-6.023-6.023 3.372-3.373z"/>
+									</g>
+								</svg>	<!-- Commentaire SEO : bénéfices du svg. -->
+								<!-- <a href="https://iconscout.com/icons/presentation" target="_blank">Presentation Icon</a> by <a href="https://iconscout.com/contributors/kenny-sing" target="_blank">Kenny Sing</a> -->
+								<!-- Commentaire SEO : crédit de l'auteur de l'icône. -->
+							<!-- </div> -->
+							<!-- <h3 class="mg-md text-center"> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<h3>
 								Illustrations
 							</h3>
-							<p class="text-center ">
-								Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
+							<!-- <p class="text-center "> --> <!-- Commentaire SEO : suppression de l'attribut pour la refonte du style. -->
+							<p>
+								<!-- Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance. -->
+								Un bon design n&rsquo;est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d&rsquo;élégance.
 							</p>
 						</div>
-					</div>
-					<div class="row voffset-lg voffset">
-						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-							<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
+					<!-- </div> -->
+					<!-- <div class="row voffset-lg voffset">
+						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center"> --> <!-- Commentaire SEO : suppression des <div> pour une refonte du style. -->
+						<div class="citation">
+							<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" /> --> <!-- Commentaire SEO : suppression de l'image et transposition de son contenu en texte. -->
+							<q>
+								«&nbsp;L&rsquo;agence <strong>La Panthère</strong> est une excellente agence Web&nbsp;! 
+								Les Web Designers ont réussi à capturer l&rsquo;essence de notre entreprise et à l&rsquo;intégrer à notre site. 
+								Cela nous a aidé à doubler nos <em>ventes en ligne</em> à <em>Lyon</em>.&nbsp;»
+							</q>
+							<p>
+								Maxime Guibard, PDG de <a href="#">À vos fourchettes</a>
+							</p>
 						</div>
-					</div>
-				</div>
+					<!-- </div> -->
+				<!-- </div> -->
 			</div>
 			<!-- bloc-2-services END -->
 

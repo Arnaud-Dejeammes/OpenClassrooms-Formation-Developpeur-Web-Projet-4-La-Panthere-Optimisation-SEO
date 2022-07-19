@@ -8,6 +8,14 @@
     src: url("fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
 } /* Commentaire SEO : la police correspond à celle qui est identifiée dans le sous-titre du logo original. Il s'agit d'une police à la fois lisible et au design moderne. */
 
+em, strong {
+    font-style: normal;
+} /* Commentaire SEO : conserve le fond sémantique à destination des algorithmes sans que s'applique un style css particulier. */
+
+q {
+    quotes: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +27,7 @@ body {
 
 @media (max-width: 1023px) {
     body {
-        background-size: 120%;
+        background-size: 120%;        
     }
 } /* Commentaire SEO : */
 
@@ -142,38 +150,38 @@ a:hover {
 }
 
 .d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
+/* .d-bloc .navbar a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+.d-bloc .navbar-brand /* ,
 .d-bloc a .icon-sm,
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
+.d-bloc a .icon-xl, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* .d-bloc h1 a, */
 /* .d-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-.d-bloc h3 a,
-.d-bloc h4 a,
+/* .d-bloc h3 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* ,
+.d-bloc p a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ {
     color: rgba(255, 255, 255, .6);
 }
 
-.d-bloc .a-btn:hover,
+/* .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
+.d-bloc a:hover .icon-xl, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* .d-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* .d-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
+/* .d-bloc h3 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+/* .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
+.d-bloc h6 a:hover * / /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* ,
+.d-bloc p a:hover */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* {
     color: rgba(255, 255, 255, 1);
-}
+} */
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -215,12 +223,12 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.d-bloc .panel,
+/* .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
-}
+} */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
 
-.d-bloc .panel button:hover,
+/* .d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
 }
@@ -245,10 +253,10 @@ a:hover {
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
 .l-bloc a .icon-lg,
-.l-bloc a .icon-xl,
+.l-bloc a .icon-xl, */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
 /* .l-bloc h1 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* .l-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-.l-bloc h3 a,
+/* .l-bloc h3 a,
 .l-bloc h4 a,
 .l-bloc h5 a,
 .l-bloc h6 a,
@@ -263,10 +271,10 @@ a:hover {
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
 .l-bloc a:hover .icon-lg,
-.l-bloc a:hover .icon-xl,
+.l-bloc a:hover .icon-xl, */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
 /* .l-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* .l-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-.l-bloc h3 a:hover,
+/* .l-bloc h3 a:hover,
 .l-bloc h4 a:hover,
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
@@ -284,7 +292,7 @@ a:hover {
 .l-bloc .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}
+} */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
 
 .voffset {
     margin-top: 30px;
@@ -305,6 +313,7 @@ a:hover {
     padding-left: 0;
 }
 
+/* Header */
 header {
     z-index: 1;    
     overflow: visible;    
@@ -383,7 +392,125 @@ header h2 {
     }
 } /* Commentaire SEO : */
 
+/* Bloc services */
+#bloc-2-services {
+    padding: 50px 0 50px 0;
+}
 
+@media (min-width: 1024px) {
+    #services-description {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 15em;
+    }
+}
+
+@media (min-width: 1300px) {
+    #services-description {
+        margin: 0 0 0 15vw;
+    }
+}
+
+.definition, .citation {
+    margin: 0 0 0 15vw;
+    width: 70vw;
+    font-family: "WorkSans", Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    text-align: justify;
+}
+
+@media (min-width: 1024px) {
+    .definition, .citation {
+        margin: 0 auto 0 auto;
+        width: 580px;
+        font-size: 1.5em;         
+    }
+}
+
+.definition strong, .citation strong {
+    font-family: "Merienda", cursive, serif;
+}
+
+.service {
+    margin: 3vw auto 7vw auto;
+    width: 70vw;
+    font-family: "WorkSans", Helvetica, sans-serif;
+    color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+}
+
+@media (min-width: 1024px) {
+    .service {        
+        margin: 5em 4% 5em 0;
+        width: 25%;        
+    }
+}
+
+.service-icon {
+    position: relative;    
+    left: 43%;
+    filter: drop-shadow(1px 1px 2px #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    fill: dodgerblue; /* Couleur complémentaire du Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+}
+
+@media (min-width: 1024px) {
+    .service-icon {
+        left: 39%;
+    }
+}
+
+.service h3 {    
+    font-size: 3.3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .service h3 {
+        font-size: 1.65em;
+    }
+}
+
+.service p {
+    font-size: 2.7vw;
+    text-align: justify
+}
+
+@media (min-width: 1024px) {
+    .service p {
+        font-size: 1.35em;        
+    }
+}
+
+.citation p {
+    margin: 4vw 0 0 0;
+    font-size: 3.15vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .citation p {
+        margin: 1.5em 0 0 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .citation p {
+        font-size: 1.15em;
+    }
+}
+
+.citation a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.citation a:visited {
+    text-decoration: none;
+    color: dodgerblue;
+}
 
 .navbar {
     margin-bottom: 0;
@@ -426,14 +553,14 @@ header h2 {
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
+/* .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
-.nav > li a:hover,
+/* .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -501,11 +628,11 @@ header h2 {
     }
 }
 
-.nav > li > .dropdown a {
+/* .nav > li > .dropdown a {
     background: none!important;
     display: block;
     padding: 14px 15px;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 nav .caret {
     margin: 0 5px;
@@ -739,14 +866,14 @@ a[data-lightbox]:hover img {
 
 /* h1, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* h2, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-h3,
+/* h3, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 h4,
 h5,
 h6,
-p,
+/* p, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 label,
-.btn,
-a {
+.btn /*,
+a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ {
     font-family: "helvetica";
     font-weight: 400;
     /* color: #575757!important; */
@@ -776,9 +903,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
+/* p {
     font-size: 11px;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -863,7 +990,7 @@ Tous les autres boutons sont éliminés. */
 .contact-button-desktop {
     z-index: 1;
     position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
-    margin: 3vw 0 0 3vw;
+    margin: 3vw 0 0 2.5em;
     border: none;
     border-radius: 10vw;
     box-shadow: 0 0vw 1.5vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
@@ -925,12 +1052,12 @@ Tous les autres boutons sont éliminés. */
     line-height: 1.4em;
 } */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
-h3 {
+/* h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
-}
+} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 .med-width-whitespace {
     max-width: 800px;
@@ -1112,11 +1239,11 @@ h4 {
     }
     /* h1, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
     /* h2, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
-    h3,
+    /* h3, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
     h4,
     h5,
     h6,
-    p,
+    /* p, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
@@ -1150,20 +1277,20 @@ h4 {
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
-    .dropdown .dropdown a .caret {
+    /* .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
         border-left-color: transparent;
-    }
+    } */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
-    #hero-bloc .navbar .nav a {
+    /* #hero-bloc .navbar .nav a {
         color: rgba(255, 255, 255, .6);
-    }
+    } */
     .hero {
         padding: 50px 0;
     }
