@@ -1,18 +1,34 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr"> <!-- Commentaire SEO : -->
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
+		<meta name="author" content="OpenClassrooms (Conception Site Web) - Arnaud Dejeammes (Restructuraction SEO)"> <!-- Commentaire SEO : -->
+		<!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"> -->
+		<meta name="keywords" content="agence de web design, Lyon, sites internet, sites web, conception, refonte, amélioration, moderniser, rajeunir, illustrations, entreprises, commerce, attractivité, visibilité, accessibilité">
+		<!-- Commentaire SEO : -->
+		<!-- <meta name="description" content=""> -->
 		<meta name="description" content="La Panthère est une agence de Web Design qui aide les entreprises à devenir attractives et visibles sur Internet.">
-		<!-- Commentaire SEO : la balise <meta name="description" content="[...] a été complétée avec le contenu introductif du bloc qui présente les services de l'agence. -->
+		<!-- Commentaire SEO : la balise <meta name="description"> a été complétée avec le contenu introductif du bloc qui présente les services de l'agence. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		<!-- <link rel="shortcut icon" type="image/png" href="favicon.jpg"> -->
+
+		<!-- <meta name="robots" content="index, follow"> -->
+		<!-- Commentaire SEO : --> <!-- A activer à la fin de la modification du code. -->
+
+		<link rel="preload" href="fonts/Merienda-Regular.woff2" as="font" type="font/woff">        
+        <link rel="preload" href="fonts/WorkSans-VariableFont_wght.woff2" as="font" type="font/woff"> <!-- Commentaire SEO : -->
+
+        <!-- <link rel="prefetch" href=""> --> <!-- Commentaire SEO : --> <!-- Vérifier la pertience. -->
+		
+		<link rel="icon" type="image/xmlns-icon" href="img/logo-panthere.svg"> <!-- Commentaire SEO : -->
 
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="preload" href="style.css" as="style"> <!-- Commentaire SEO : --> <!-- Vérifier la pertience. -->
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> <!-- Commentaire SEO : à supprimer ? -->
-		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		<!-- <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> --> <!-- Commentaire SEO : suppression avec les fichiers liés. -->
+		<!-- <link rel="stylesheet" type="text/css" href="./css/et-line.css"> --> <!-- Commentaire SEO : suppression avec les fichiers liés. -->
 
+		<link rel="canonical" href="https://arnaud-dejeammes.github.io/OpenClassrooms-Formation-Developpeur-Web-Projet-4-La-Panthere-Optimisation-SEO/"/> <!-- Commentaire SEO : -->
 
 		<script src="./js/jquery-2.1.0.js"></script>
 		<script src="./js/bootstrap.js"></script>
@@ -20,16 +36,18 @@
 		<script src="./js/jquery.touchSwipe.js" defer></script>
 		<script src="./js/gmaps.js"></script>
 
-		<title>.</title>
+		<title>
+			La Panthère – Agence de Web Design
+		</title>
 
 		<!-- Analytics -->
 
 		<!-- Analytics END -->
 	</head>
-	<body  style="background-image: url(img/agence-la-panthere.jpg); background-attachment: fixed;">
+	<body style="background-image: url(img/agence-la-panthere.jpg);">
 	<!-- Commentaire SEO : l'image agence-la-panthere.jpg a été placée en fond, évitant la répétition de la même image (in bloc-1-presentation et bloc-5-cta).
 		Elle permet aussi de supprimer image-de-presentation.bmp, assez similaire au niveau visuel, dans bloc-3-what-i-do. Par ailleurs, le format de cette dernière
-		n'est pas adapté pour un fichier photo (bmp, format graphique, au lieu de jpg) et sa taille est assez grande (5,93 Mo).  -->
+		n'est pas adapté pour un fichier photo (bmp, format graphique, au lieu de jpg) et sa taille est assez grande (5,93 Mo). -->
 
 		<aside class="contact">
 			<form class="contact-form" action="page2.html" title="Contactez notre équipe !">
@@ -204,9 +222,11 @@
 							<!-- <div class="col-sm-12 text-center"> --> <!-- Commentaire SEO : suppression de la <div> pour remaniement de style. -->
 							<div class="definition">
 								<span>
-									<strong>La Panthère</strong> est une <em>agence de Web Design</em> qui <em>aide les entreprises</em> à devenir <em>attractives</em> et <em>visibles</em> sur <em>Internet</em>.
+									<strong>Agence de Web Design lyonnaise</strong>, <dfn>La Panthère</dfn> aide les entreprises à devenir plus <em>visibles</em> et <em>attractives</em> sur <em>Internet</em>.
+									<!-- <strong>La Panthère</strong> est une <em>agence de Web Design</em> qui <em>aide les entreprises</em> à devenir <em>attractives</em> et <em>visibles</em> sur <em>Internet</em>. -->
 								</span>
 							</div>
+							
 								<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" /> -->
 								<!-- Commentaire SEO : le texte se retrouve dans la balise <meta name="description" content="[...]. --> <!-- Commentaire SEO : suppression de l'image pour la remplacer par du texte. -->
 							<!-- </div> -->
@@ -309,15 +329,23 @@
 				<!-- bloc-2-services END -->
 
 				<!-- bloc-3-what-i-do -->
-				<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+				<!-- <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do"> --> <!-- Commentaire SEO : -->
+				<div class="b-parallax" style="background-image: url(img/agence-la-panthere.jpg);" id="bloc-3-what-i-do">
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace black-background">
-							<div class="col-sm-12">
-								<h2 class="mg-md text-center tc-white">
-									Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
-								</h2>
-								<p class="text-center white">
-									Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
+							<!-- <div class="col-sm-12"> -->
+							<div class="what-i-do-paragraphs">
+								<!-- <h2 class="mg-md text-center tc-white"> --> <!-- Commentaire SEO : suppression de la balise <h2>, non pertinente au regard du contenu. -->
+								<p class="paragraph-1">
+									<!-- Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br> -->
+									Nous souhaitons aider les entreprises de la <em>région lyonnaise</em> à se <em>développer</em> et à connaître le <em>succès</em>. Nous <em>coopérons</em> avec elles pour attirer de <em>nouveaux clients</em>.<br>
+									<!-- Commentaire SEO : suppression des répétitions dans ce paragraphe et le suivant ; diversification du vocabulaire pour les moteurs de recherche. -->
+								</p>
+								<!-- </h2> -->
+								<!-- <p class="text-center white"> -->
+								<p class="paragraph-2">
+									Nous aimons <em>collaborer</em> avec des <em>entrepreneurs créatifs</em> et des <em>sociétés locales</em>, qu’elles aient besoin de créer un site de A à Z, ou de donner un <em>coup de jeune</em> à leur <em>image en ligne</em>.<br>
+									Que vous ayez besoin d’une <em>identité visuelle</em> complète ou d’une refonte de votre site, <span>n’hésitez pas à nous contacter</span>. Nous travaillerons ensemble pour créer de <em>belles pages Web</em> <em>bien structurées</em>, <em>facilement trouvables</em> par les <em>moteurs de recherche</em>. <br><br>
 									<!-- <a class="ltc-white bold-link" href="page2.html">
 										Contactez notre équipe
 									</a><br> --> <!-- Commentaire SEO : suppression du lien suite à la création d'un bouton "Contact" qui suit à tout moment le mouvement de la page en fonction de son défilement. -->
@@ -333,9 +361,11 @@
 					<div class="container bloc-lg">
 						<div class="row">
 							<div class="col-sm-12 text-center">
-								<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />
+								<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" /> --> <!-- Commentaire SEO : -->
+								Nous travaillons avec de nombreux clients&nbsp;!<br>
+								Voici nos réalisations&nbsp;:
 							</div>
-						</div>
+						</div> <!-- Commentaire SEO : -->
 						<div class="row tight-width-whitespace portfolio-row">
 							<div class="col-sm-6">
 								<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
@@ -449,9 +479,9 @@
 											</a>
 										</div>
 									</div>
-									<div class="keywords" style="color:#F3976C;">
+									<!-- <div class="keywords" style="color:#F3976C;">
 										Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site
-									</div>
+									</div> -->
 									<!-- Commentaire SEO : pratique apparentée à du black hat (texte sur fond indifférencié, illisible pour les personnes, mais pas pour les moteurs de recherche).
 									Si le style s'était avéré utile, il aurait dû être transférer dans le fichier css. -->
 								</div>
@@ -481,7 +511,7 @@
 												</li>
 											</ul>		
 									</div>
-									<div class="col-sm-4">
+									<!-- <div class="col-sm-4">
 										Annuaires liste 1
 										<ul>
 											<li>
@@ -580,7 +610,7 @@
 												</a>
 											</li>
 										</ul>
-									</div>
+									</div> --> <!-- Commentaire SEO : suppression des liens inutiles qui peuvent être considérés par les algorithmes de recherche comme du black hat. -->
 								</div>
 							</div>
 						</div>

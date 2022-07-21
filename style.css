@@ -8,13 +8,21 @@
     src: url("fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
 } /* Commentaire SEO : la police correspond à celle qui est identifiée dans le sous-titre du logo original. Il s'agit d'une police à la fois lisible et au design moderne. */
 
-em, strong {
+dfn, em, strong {
     font-style: normal;
 } /* Commentaire SEO : conserve le fond sémantique à destination des algorithmes sans que s'applique un style css particulier. */
 
+dfn {
+    font-weight: bold;
+} /* Commentaire SEO : */
+
+.definition strong {
+    font-weight: normal;
+}
+
 q {
     quotes: none;
-}
+} /* Commentaire SEO : */
 
 body {
     margin: 0;
@@ -22,12 +30,15 @@ body {
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;    
+    -moz-osx-font-smoothing: grayscale;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 1023px) {
     body {
-        background-size: 120%;        
+        background-size: 120%;
     }
 } /* Commentaire SEO : */
 
@@ -392,7 +403,7 @@ header h2 {
     }
 } /* Commentaire SEO : */
 
-/* Bloc services */
+/* Bloc 2 services */
 #bloc-2-services {
     padding: 50px 0 50px 0;
 }
@@ -428,7 +439,7 @@ header h2 {
     }
 }
 
-.definition strong, .citation strong {
+.definition dfn, .citation strong {
     font-family: "Merienda", cursive, serif;
 }
 
@@ -450,7 +461,8 @@ header h2 {
     position: relative;    
     left: 43%;
     filter: drop-shadow(1px 1px 2px #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    fill: dodgerblue; /* Couleur complémentaire du Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    fill: #1E21F4;
+    /*dodgerblue; */ /* Couleur complémentaire du Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
 }
 
 @media (min-width: 1024px) {
@@ -493,23 +505,62 @@ header h2 {
 @media (min-width: 1024px) {
     .citation p {
         margin: 1.5em 0 0 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    .citation p {
         font-size: 1.15em;
     }
 }
 
 .citation a {
     text-decoration: none;
-    color: dodgerblue;
+    color: #1E21F4; /* dodgerblue; */
 }
+/* Split-Complementary Palette
+As per the RGB color wheel, the split-complementary colors of Trendy Orange (#F4861E) are #1EF4F1 (Fluorescent Blue) and #1E21F4 (Bluebonnet). A split-complementary color palette consists of the main color along with those on either side (30°) of the complementary color. Based on our research, usage of split-complementary palettes is on the rise online, especially in graphics and web sites designs. It may be because it is not as contrasting as the complementary color palette and, hence, results in a combination which is pleasant to the eyes.
+https://www.color-name.com/trendy-orange.color */
 
 .citation a:visited {
     text-decoration: none;
-    color: dodgerblue;
+    color:#1E21F4; /* dodgerblue; */
+}
+
+/* Bloc 3 what-i-do */
+#bloc-3-what-i-do {
+    background-size: cover;
+    font-family: "WorkSans", Helvetica, sans-serif;
+    text-align: justify;
+}
+
+@media (max-width: 1023px) {
+    .what-i-do-paragraphs {
+        margin: 0 0 0 5vw;
+    }
+}
+
+.paragraph-1 {
+    font-size: 3.55vw;
+    font-weight: bold;
+    color: #F4861E;
+}
+
+@media (min-width: 1024px) {
+    .paragraph-1 {
+        font-size: 1.9em;
+    }
+}
+
+.paragraph-2 {
+    font-size: 3vw;
+    color: #FFFFFF;
+}
+
+.paragraph-2 span {
+    font-weight: bold;
+    color: #F4861E;
+}
+
+@media (min-width: 1024px) {
+    .paragraph-2 {
+        font-size: 1.4em;
+    }
 }
 
 .navbar {
@@ -1096,8 +1147,12 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /* background-color: rgba(165, 147, 99, 0.7); */ /* Commentaire SEO : */
     padding: 40px 40px 40px 40px;
+
+    background-color: #492809;
+    opacity: 0.7;
+    border-radius: 20px; /* Commentaire SEO : */
 }
 
 .bold-link {
@@ -1152,21 +1207,21 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+/* .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+} */ /* Commentaire SEO : suppression de fichiers avec peu d'intérêt visuel, voire gênant pour l'accessibilité. Allègement de données de navigation. */
 
-.bg-banniere {
+/* .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
-} /* Commentaire SEO : transfert dans le fichier html. */ /* A supprimer. */
+} */ /* Commentaire SEO : transfert dans le fichier html. */ /* A supprimer. */
 
-.bg-presentation {
+/* .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
-}
+} */ /* Commentaire SEO : suppression de l'image, trop lourde, redondante avec l'image de fond et au format inadapté. */
 
 @media (max-width: 1024px) {
     .bloc {
