@@ -131,10 +131,10 @@ a:hover {
     right: 0;
 } /* Commentaire SEO : */ /* A supprimer. */
 
-.texture-paper::before {
+/* .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-} /* Commentaire SEO : */ /* A supprimer. */
+} */ /* Commentaire SEO : */
 
 .b-parallax {
     background-attachment: fixed;
@@ -485,6 +485,7 @@ header h2 {
 }
 
 .service p {
+    
     font-size: 2.7vw;
     text-align: justify
 }
@@ -559,6 +560,21 @@ https://www.color-name.com/trendy-orange.color */
 
 @media (min-width: 1024px) {
     .paragraph-2 {
+        font-size: 1.4em;
+    }
+}
+
+/* Bloc 4 portfolio */
+.portfolio-title {
+    font-family: "WorkSans", Helvetica, sans-serif;
+    font-size: 3.35vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #180D03;
+}
+
+@media (min-width: 1024px) {
+    .portfolio-title {
         font-size: 1.4em;
     }
 }
