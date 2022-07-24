@@ -1389,7 +1389,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */ /* Commentaire SEO : suppression de la police inutile. */
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1406,7 +1406,7 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    /* color: #337ab7; */ /* Commentaire SEO : suppression de la couleur de police pour favoriser la nouvelle. */
     text-decoration: none
 }
 
@@ -1494,7 +1494,7 @@ hr {
     cursor: pointer
 }
 
-.h1,
+/* .h1,
 .h2,
 .h3,
 .h4,
@@ -1623,7 +1623,7 @@ h6 {
 
 p {
     margin: 0 0 10px
-}
+}  */ /* Commentaire SEO : suppression du style par défaut pour éviter les conflits ou les calculs contingents. */
 
 .lead {
     margin-bottom: 20px;

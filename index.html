@@ -308,7 +308,7 @@
 									<!-- Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance. -->
 									Un bon design n&rsquo;est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d&rsquo;élégance.
 								</p>
-							</div>
+							</article>
 						<!-- </div> -->
 						<!-- <div class="row voffset-lg voffset">
 							<div class="col-xs-12 col-md-8 col-md-offset-2 text-center"> --> <!-- Commentaire SEO : suppression des <div> pour une refonte du style. -->
@@ -323,14 +323,14 @@
 									Maxime Guibard, PDG de <a href="#">À vos fourchettes</a>
 								</p>
 							</div>
-						<!-- </div> -->
+						</div>
 					<!-- </div> -->
 				</div>
 				<!-- bloc-2-services END -->
 
 				<!-- bloc-3-what-i-do -->
 				<!-- <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do"> --> <!-- Commentaire SEO : -->
-				<div class="b-parallax" style="background-image: url(img/agence-la-panthere.jpg);" loading="lazy" id="bloc-3-what-i-do">
+				<div class="b-parallax" style="background-image: url(img/agence-la-panthere.jpg);" id="bloc-3-what-i-do"> <!-- Commentaire SEO : loading="lazy" non-autorisé par le W3C. -->
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace black-background">
 							<!-- <div class="col-sm-12"> -->
@@ -357,22 +357,143 @@
 				<!-- bloc-3-what-i-do END -->
 
 				<!-- bloc-4-portfolio -->
-				<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
-					<div class="container bloc-lg">
+				<!-- <div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio"> -->
+				<div class="bloc bgc-white" id="bloc-4-portfolio"> <!-- Commentaire SEO : suppression des class inutiles. -->
+					<!-- <div class="container bloc-lg"> -->
+					<div class="bloc-lg">
 						<div class="row">
-							<div class="col-sm-12 text-center">
+							<!-- <div class="col-sm-12 text-center"> -->
+							<div class="text-center">
 								<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" /> --> <!-- Commentaire SEO : -->
 								<p class="portfolio-title">
-									Nous assistons de nombreux clients&nbsp;!<br>
+									Nous travaillons avec de nombreux clients&nbsp;!<br>
 									Voici quelques-unes de nos réalisations&nbsp;:
 								</p>
 							</div> <!-- Commentaire SEO : transcription et modifications du texte présent sur l'image. -->
 						</div> <!-- Commentaire SEO : -->
-						<div class="row tight-width-whitespace portfolio-row">
+
+						<div class="slideshow">
+							<div class="images-slides">                
+								<input type="radio" name="radio-button" id="journal_local" aria-label="Diapositive numéro 1">
+								<input type="radio" name="radio-button" id="photographes" aria-label="Diapositive numéro 2">
+								<input type="radio" name="radio-button" id="voyageur" aria-label="Diapositive numéro 3">
+								<input type="radio" name="radio-button" id="agence_mariage" aria-label="Diapositive numéro 4">
+								
+								<div class="slide-frame first">
+									<article class="slideshow-card">
+										<a href="#">
+											<div class="slideshow-card-image">
+												<img class="" src="img/site_web_journal_local.webp" loading="lazy" alt="Des magazines colorés ouverts se trouvent superposés les uns sur les autres à partir de la pliure centrale.">
+												<!-- Commentaire SEO : importance des descriptions alt pour le référencement et l'accessibilité. -->
+											</div>
+										</a>
+			
+										<div class="slideshow-card-body">
+											<div class="slideshow-card-body-title">
+												<h2 class="">
+													<a href="#">
+														Refonte d&rsquo;un site web pour un journal local
+													</a>
+												</h2>
+											</div>                        
+											<div class="slideshow-card-body-description">
+												<p class="">
+													Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
+												</p>
+											</div>
+										</div>
+									</article>
+									</div>
+									<div class="slide-frame">
+									<article class="slideshow-card">
+										<a href="#">
+											<div class="slideshow-card-image">
+												<img class="" src="img/site_web_photographes.webp" loading="lazy" alt="Entourée d'éclairages nocturnes, une jeune femme de profil, avec des lunettes et la capuche d'un hoody gris clair sur la tête, prend une photo avec un appareil équipé d'un télé-objectif posé sur un pied.">
+												<!-- Commentaire SEO : importance des descriptions alt pour le référencement et l'accessibilité. -->
+											</div>
+										</a>
+										<div class="slideshow-card-body">
+											<div class="slideshow-card-body-title">
+												<h2 class="">
+													<a href="#">
+														Création d&rsquo;un site web pour photographes
+													</a>
+												</h2>
+											</div>
+											<div class="slideshow-card-body-description">
+												<p class="">
+													Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
+												</p>
+											</div>
+										</div>
+									</article>
+									</div>
+									<div class="slide-frame">
+									<article class="slideshow-card">
+										<a href="#">
+											<div class="slide slideshow-card-image">
+												<img class="" src="img/site_web_voyageur.webp" loading="lazy" alt="Du matériel électronique divers (ordinateur portable, appareil photo, micro portatif, etc.), aux couleurs noir, gris clair et orange,  est posé sur un fond noir">
+												<!-- Commentaire SEO : importance des descriptions alt pour le référencement et l'accessibilité. -->
+											</div>
+										</a>
+			
+										<div class="slideshow-card-body">
+											<div class="slideshow-card-body-title">
+												<h2 class="">
+													<a href="#">
+														Création d&rsquo;un site internet pour un voyageur
+													</a>
+												</h2>
+											</div>                        
+											<div class="slideshow-card-body-description">
+												<p class="">
+													Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
+												</p>
+											</div>
+										</div>
+									</article>
+									</div>
+									<div class="slide-frame">
+									<article class="slideshow-card">
+										<a href="#">
+											<div class="slideshow-card-image">
+												<img class="" src="img/site_web_agence_mariage.webp" loading="lazy" alt="Une vue plongeante montre des mains féminines en train de tapoter sur le clavier d'un ordinateur portable, au milieu de divers accessoires (ciseaux, papiers, rubans, etc.) dispersés sur une table en bois blanche.">
+												<!-- Commentaire SEO : importance des descriptions alt pour le référencement et l'accessibilité. -->
+											</div>
+										</a>
+			
+										<div class="slideshow-card-body">
+											<div class="slideshow-card-body-title">
+												<h2 class="">
+													<a href="#">
+														Conception d&rsquo;un site pour une agence de mariage
+													</a>
+												</h2>
+											</div>                        
+											<div class="slideshow-card-body-description">
+												<p class="">
+													Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
+												</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								
+								<div class="sliding">
+									<label class="sliding-button" for="journal_local" title="Site journal local"></label>
+									<label class="sliding-button" for="photographes" title="Site photographes"></label>
+									<label class="sliding-button" for="voyageur" title="Site voyageur"></label>
+									<label class="sliding-button" for="agence_mariage" title="Site agence de mariage"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						<!-- <div class="row tight-width-whitespace portfolio-row">
 							<div class="col-sm-6">
-								<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+								<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"> -->
 									<!-- <img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /> -->
-									<img src="img/site_web_journal_local.webp" loading="lazy" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" />
+									<!-- <img src="img/site_web_journal_local.webp" loading="lazy" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" />
 								</a>
 								<h3 class="mg-md text-center">
 									Refonte d'un site web pour un journal local
@@ -380,11 +501,11 @@
 								<p class="text-center">
 									Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 								</p>
-							</div>
-							<div class="col-sm-6">
-								<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+							</div> --> <!-- Commentaire SEO : suppression du data-lightbox pour un slideshow plus léger, plus efficace et plus simple en css. -->
+							<!-- <div class="col-sm-6">
+								<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"> --> <!-- Commentaire SEO : suppression du data-lightbox pour un slideshow plus léger, plus efficace et plus simple en css. -->
 									<!-- <img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /> -->
-									<img src="img/site_web_photographes.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" />
+									<!-- <img src="img/site_web_photographes.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" />
 								</a>
 								<h3 class="mg-md text-center">
 									Création d'un site web pour photographes
@@ -396,9 +517,9 @@
 						</div>
 						<div class="row tight-width-whitespace portfolio-row">
 							<div class="col-sm-6">
-								<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+								<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"> --> <!-- Commentaire SEO : suppression du data-lightbox pour un slideshow plus léger, plus efficace et plus simple en css. -->
 									<!-- <img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/> -->
-									<img src="img/site_web_voyageur.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/>
+									<!-- <img src="img/site_web_voyageur.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/>
 								</a>
 								<h3 class="mg-md text-center">
 									Création d'un site internet pour un voyageur
@@ -408,9 +529,9 @@
 								</p>
 							</div>
 							<div class="col-sm-6">
-								<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+								<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"> --> <!-- Commentaire SEO : suppression du data-lightbox pour un slideshow plus léger, plus efficace et plus simple en css. -->
 									<!-- <img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /> -->
-									<img src="img/site_web_agence_mariage.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
+									<!-- <img src="img/site_web_agence_mariage.webp" loading="lazy" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
 								</a>
 								<h3 class="mg-md text-center">
 									Conception d'un site pour une agence de mariage
@@ -420,7 +541,7 @@
 								</p>
 							</div>
 						</div>
-					</div>
+					</div>  --> <!-- Commentaire SEO : suppression du data-lightbox pour un slideshow plus léger, plus efficace et plus simple en css. -->
 				</div>
 				<!-- bloc-4-portfolio END -->
 

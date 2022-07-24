@@ -565,17 +565,232 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 /* Bloc 4 portfolio */
+#bloc-4-portfolio {
+    
+}
+
 .portfolio-title {
+    margin: 0 0 2em 15vw;
+    width: 70vw;
     font-family: "WorkSans", Helvetica, sans-serif;
     font-size: 3.35vw;
     font-weight: bold;
     text-transform: uppercase;
-    color: #180D03;
+    color: #180D03;    
 }
 
 @media (min-width: 1024px) {
     .portfolio-title {
         font-size: 1.4em;
+    }
+}
+
+.slideshow {
+    display: flex;
+    /* overflow: hidden; */    
+}
+
+.images-slides {
+    display: flex;
+    padding: 0 0 3vw 0; 
+}
+
+.images-slides input {
+    display: none;
+}
+
+.sliding {
+    display: inline-flex;
+    position: absolute;
+    top: 31vw;
+    margin: 0 0 2em 15vw;
+    width: 70vw;
+    /* width: 26em;
+    padding: 3em 3em 3em 0vw; */
+    
+    /* left: 37%; */
+    
+    /* transform: translate(0, -30px); */
+    /* background-color: #364577; */
+    /* margin: 0 auto 0 auto; */
+}
+
+.sliding-button {
+    margin: 0 auto 0 auto; 
+    width: 15px;
+    height: 15px;
+    background-color: #F4861E;
+    border: 2Px solid #F4861E;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: translate(0, 0em);
+}
+
+.sliding-button:hover {    
+    border: 2px solid #492809;
+    transform: scale(1.3);
+    transition: 150ms;
+}
+
+#journal_local:checked~.first {
+    margin: 0 0 0 0
+    
+}
+
+#photographes:checked~.first {
+    margin: 0 0 0 -100vw;    
+}
+
+#voyageur:checked~.first {
+    margin: 0 0 0 -200vw;
+}
+
+#agence_mariage:checked~.first {
+    margin: 0 0 0 -300vw;
+}
+
+/* @media (min-width: 1024px) {
+    #journal_local:checked~.first {
+        margin-left: 0;
+    }
+    
+    #photographes:checked~.first {
+        margin-left: -70vw;
+    }
+    
+    #voyageur:checked~.first {
+        margin-left: -140vw;
+    }
+    
+    #agence_mariage:checked~.first {
+        margin-left: -210vw;
+    }
+} */
+
+/* .slideshow li {
+    list-style: none;
+} */
+
+.slide-frame {    
+    width: 100vw;
+    height: fit-content;    
+    transition: 450ms ease-out;    
+}
+
+.slideshow-card {
+    position: relative;
+    top: 5vw;
+    margin: 0 auto 0 auto;
+    /* transform: translate(15vw, 0); */
+    width: 26em;
+    height: 37em;
+    border-radius: 2em;    
+    box-shadow: 0 1vw 2vw 1vw #d9d9d9;
+    padding: 1em 0 0 0;
+    overflow: hidden;    
+}
+
+/* @media (min-width: 1024px) {
+    .slideshow-card {        
+        margin: 0 50vw 0 30vw;
+        width: 20em;
+        height: 25em;
+        border-radius: 0.85vw;
+        box-shadow: 0 0.3vw 0.6vw 0.3vw #d9d9d9;
+        padding: 0.4em 0 0 0;
+    }
+} */
+  
+/* .slideshow-card */ .slideshow-card-image {
+    margin: 0 auto 0 auto;
+    width: 95%;
+    border-radius: 1.2em 1.2em 1.2em 1.2em;
+    overflow: hidden;
+}
+
+/* @media (min-width: 1024px) {
+    .slideshow-card .slideshow-card-image {
+        height: 12vw;
+        border-radius: 0.85vw 0.85vw 0 0;
+    }
+} */
+
+.slideshow-card .slideshow-card-image img {
+    position: relative;
+    width: 110%;
+    transition: width 900ms 100ms ease-in-out;
+}
+
+.slideshow-card:hover img {
+    width: 100%;
+}
+
+.slideshow-card:hover .slideshow-card-body-title {
+    height: 70px;
+}
+
+/* .slideshow-card */ .slideshow-card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 1em 0 1em;    
+    font-family: 'WorkSans', Helvetica, sans-serif;    
+    text-align: justify;
+}
+  
+/* @media (min-width: 1024px) {
+.slideshow-card .slideshow-card-body {
+    width: ;
+    height: ;
+    }
+} */
+
+.slideshow-card-body-title {
+    height: 150px;
+    text-transform: uppercase;    
+    transition: 900ms;    
+}
+
+.slideshow-card-body-title a {
+    text-decoration: none;
+    color: #1E21F4; /* dodgerblue; */
+}
+/* Split-Complementary Palette
+As per the RGB color wheel, the split-complementary colors of Trendy Orange (#F4861E) are #1EF4F1 (Fluorescent Blue) and #1E21F4 (Bluebonnet). A split-complementary color palette consists of the main color along with those on either side (30°) of the complementary color. Based on our research, usage of split-complementary palettes is on the rise online, especially in graphics and web sites designs. It may be because it is not as contrasting as the complementary color palette and, hence, results in a combination which is pleasant to the eyes.
+https://www.color-name.com/trendy-orange.color */
+
+.slideshow-card-body-title:visited {
+    text-decoration: none;
+    color:#1E21F4; /* dodgerblue; */
+}
+
+.slideshow-card-body-description {
+    font-size: 1.1em;
+}
+
+.slideshow-card .slideshow-card-body .slideshow-card-body-title {
+    /* height: 50%;
+    width: 76.8vw;
+    padding: 0 0 0 3.7333333333vw; */
+}
+
+@media (min-width: 1024px) {
+.slideshow-card .slideshow-card-body .slideshow-card-body-title {
+    /* width: 19.7802197802vw;
+    padding: 0 0 0 0.9615384615vw; */
+    }
+}
+
+.slideshow-card .slideshow-card-body .slideshow-card-body-place {
+    /* height: 50%;
+    width: 76.8vw;
+    padding: 0 0 0 3.7333333333vw; */
+}
+
+@media (min-width: 1024px) {
+    .slideshow-card .slideshow-card-body .slideshow-card-body-place {
+        /* width: 19.7802197802vw;
+        padding: 0 0 0 0.9615384615vw; */
     }
 }
 
@@ -822,7 +1037,7 @@ button {
     opacity: 1;
 }
 
-a[data-lightbox] {
+/* a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
@@ -929,7 +1144,7 @@ a[data-lightbox]:hover img {
     padding: 0;
     color: rgba(0, 0, 0, .5);
     background: none;
-}
+} */ /* Commentaire SEO : suppression lightbox pour slideshow css */
 
 /* h1, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 /* h2, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
@@ -1063,7 +1278,7 @@ Tous les autres boutons sont éliminés. */
     box-shadow: 0 0vw 1.5vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
     padding: .9em 1.5em .9em 1.5em; /* 1.35vw 3.15vw 1.35vw 3.15vw; /* Commentaire SEO : adaptation responsive ; prise en compte de proportions UX design. */
-    font-family: "WorkSans";
+    font-family: "WorkSans", Helvetica, sans-serif;
     font-size: 1.2em; /* 2vw; /* Commentaire SEO : adaptation responsive et lisibilité. */
     font-weight: 700;
     text-transform: uppercase;
