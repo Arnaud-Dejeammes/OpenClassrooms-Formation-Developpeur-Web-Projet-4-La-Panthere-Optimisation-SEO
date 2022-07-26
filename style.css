@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Merienda";
+    font-family: 'Merienda';
     src: url("fonts/Merienda-Regular.woff2") format("woff2");
 } /* Commentaire SEO : */
 
 @font-face {
-    font-family: "WorkSans";
+    font-family: 'WorkSans';
     src: url("fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
 } /* Commentaire SEO : la police correspond à celle qui est identifiée dans le sous-titre du logo original. Il s'agit d'une police à la fois lisible et au design moderne. */
 
@@ -23,6 +23,11 @@ dfn {
 q {
     quotes: none;
 } /* Commentaire SEO : */
+
+ul {
+    padding: 0;
+    list-style: none;
+}
 
 body {
     margin: 0;
@@ -373,7 +378,7 @@ puis s'adapte en s'agrandissant en fonction de la résolution. */
 } */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 h1 {
-    font-family: "Merienda", cursive, serif;
+    font-family: 'Merienda', cursive, serif;
     font-size: 7.5vw; /* 6.5vw */
     color: #F4861E;
     line-height: 1.2em;
@@ -390,7 +395,7 @@ header h2 {
     /* width: fit-content; */
     margin-block-start: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet et permettent de s'approcher du logo original. */
     margin-block-end: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet. */
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3.5vw; /* 3vw */
     color: #F4861E;
     text-transform: uppercase;
@@ -425,7 +430,7 @@ header h2 {
 .definition, .citation {
     margin: 0 0 0 15vw;
     width: 70vw;
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3vw;
     color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     text-align: justify;
@@ -440,13 +445,13 @@ header h2 {
 }
 
 .definition dfn, .citation strong {
-    font-family: "Merienda", cursive, serif;
+    font-family: 'Merienda', cursive, serif;
 }
 
 .service {
     margin: 3vw auto 7vw auto;
     width: 70vw;
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
 }
 
@@ -526,7 +531,7 @@ https://www.color-name.com/trendy-orange.color */
 /* Bloc 3 what-i-do */
 #bloc-3-what-i-do {
     background-size: cover;
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     text-align: justify;
 }
 
@@ -572,7 +577,7 @@ https://www.color-name.com/trendy-orange.color */
 .portfolio-title {
     margin: 0 0 2em 15vw;
     width: 70vw;
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3.35vw;
     font-weight: bold;
     text-transform: uppercase;
@@ -715,7 +720,7 @@ https://www.color-name.com/trendy-orange.color */
     }
 } */
 
-.slideshow-card .slideshow-card-image img {
+.slideshow-card-image img {
     position: relative;
     width: 110%;
     transition: width 900ms 100ms ease-in-out;
@@ -727,6 +732,11 @@ https://www.color-name.com/trendy-orange.color */
 
 .slideshow-card:hover .slideshow-card-body-title {
     height: 70px;
+}
+
+.slideshow-photo {
+    width: 100%;
+    height: 100%;
 }
 
 /* .slideshow-card */ .slideshow-card-body {
@@ -747,7 +757,8 @@ https://www.color-name.com/trendy-orange.color */
 
 .slideshow-card-body-title {
     height: 150px;
-    text-transform: uppercase;    
+    font-size: .9em;
+    text-transform: uppercase;
     transition: 900ms;    
 }
 
@@ -792,6 +803,171 @@ https://www.color-name.com/trendy-orange.color */
         /* width: 19.7802197802vw;
         padding: 0 0 0 0.9615384615vw; */
     }
+}
+
+/* Bloc 5 bannière */
+#bloc-5-cta {
+    font-family: 'WorkSans', Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #F4861E;
+    filter: drop-shadow(0 0 0.3vw #492809);
+}
+
+/* Footer */
+footer {
+    background-color: #F4861E;
+    font-family: 'WorkSans', Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.panther-font {
+    font-family: 'Merienda', cursive, serif;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1E21F4;
+}
+
+.link:hover {
+    color: dodgerblue;
+    filter: drop-shadow(0 0 0.3vw #492809);
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: #1E21F4;
+}
+
+.social-networks-list {
+    /* list-style: none; */
+}
+
+#logo-twitter, #logo-dribbble, #logo-instagram {
+    width: 30px;
+}
+
+#logo-twitter {    
+    top: 20%;
+    left: 20%;
+    fill: #1DA1F2;    
+}
+
+#logo-facebook {
+    top: 18%;
+    left: 30%;
+    width: 20px;
+    fill: #4267B2;
+}
+
+#logo-dribbble {
+    top: 21%;
+    left: 22%;
+    border-radius: 15px;
+    fill: #B2215A;    
+    background-color: #EA4C89;
+}
+
+#logo-instagram {
+    top: 16%;
+    left: 23%;
+}
+
+.social-network-button {
+    z-index: 1;
+    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    margin: 0 0 20px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: transparent;    
+    border: none;
+}
+
+.logo-social {
+    position: absolute;
+    z-index: -1;    
+    filter: drop-shadow(0 0 0.3vw #492809);
+    transition: transform 400ms ease-in-out;
+}
+
+.logo-social-hover {
+    position: absolute;
+    fill: #F4861E; /* #FFFFFF; */
+    filter: drop-shadow(0 0 0.3vw #492809);
+}
+
+#logo-instagram-hover {
+    fill: #F69E4B;
+}
+
+#logo-twitter-hover, #logo-dribbble-hover, #logo-instagram-hover {
+    width: 30px;
+}
+
+#logo-twitter-hover {    
+    top: 20%;
+    left: 20%;
+}
+
+#logo-facebook-hover {
+    top: 18%;
+    left: 30%;
+    width: 20px;
+}
+
+#logo-dribbble-hover {
+    top: 21%; /* 18 25 */
+    left: 22%;
+}
+
+#logo-instagram-hover {
+    top: 16%;
+    left: 23%;
+}
+
+.social-network-button__hover-effect {
+    z-index: -1;
+    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    border-radius: 50vw;
+    box-shadow: 0 0 2vw 0 #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */     
+    transform: scale(0); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    transition: transform 400ms ease-in-out;
+}
+
+#twitter-button__hover-effect {
+    background: #1DA1F2;
+}
+
+#facebook-button__hover-effect {
+    background: #4267B2;
+}
+
+#dribbble-button__hover-effect {
+    background: #B2215A;
+}
+
+#instagram-button__hover-effect {
+    background: linear-gradient(to top right, #FED576, #F47133, #BC3081, #4C63D2);
+}
+
+.social-network-button:hover .logo-social {
+    transform: scale(0); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+.social-network-button:hover .social-network-button__hover-effect {
+    transform: scale(1); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+.partners-title {
+    color: #FFFFFF;
+    text-transform: uppercase;    
 }
 
 .navbar {
@@ -982,13 +1158,13 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 } */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
-.icon-md {
+/* .icon-md {
     font-size: 30px!important;
-}
+} */ /* Commentaire SEO : suppression de la catégorie. */
 
-.icon-lg {
+/* .icon-lg {
     font-size: 60px!important;
-}
+}  */ /* Commentaire SEO : suppression de la catégorie. */
 
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
@@ -1278,7 +1454,7 @@ Tous les autres boutons sont éliminés. */
     box-shadow: 0 0vw 1.5vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
     padding: .9em 1.5em .9em 1.5em; /* 1.35vw 3.15vw 1.35vw 3.15vw; /* Commentaire SEO : adaptation responsive ; prise en compte de proportions UX design. */
-    font-family: "WorkSans", Helvetica, sans-serif;
+    font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 1.2em; /* 2vw; /* Commentaire SEO : adaptation responsive et lisibilité. */
     font-weight: 700;
     text-transform: uppercase;
@@ -1386,16 +1562,16 @@ h4 {
     border-radius: 20px; /* Commentaire SEO : */
 }
 
-.bold-link {
+/* .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
-}
+} */ /* Commentaire SEO : */
 
 .bgc-white {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
+/* .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
@@ -1405,7 +1581,7 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
-}
+}  */ /* Commentaire SEO : suppression des couleurs inutiles et en conflit avec les nouvelles. */
 
 /* .btn-atomic-tangerine {
     background: #F3976C;
@@ -1417,7 +1593,7 @@ h4 {
     color: #FFFFFF!important;
 } */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
 
-.ltc-white {
+/* .ltc-white {
     color: #FFFFFF!important;
 }
 
@@ -1436,7 +1612,7 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
+} */ /* Commentaire SEO : suppression des couleurs inutilisées. */
 
 /* .bg-dots-bg {
     background-image: url("img/dots-bg.png");
