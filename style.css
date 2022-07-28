@@ -248,7 +248,6 @@ a:hover {
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
 }
-
 .l-bloc .icon-round,
 .l-bloc .icon-square,
 .l-bloc .icon-rounded,
@@ -256,12 +255,10 @@ a:hover {
 .l-bloc .icon-semi-rounded-b {
     border-color: rgba(0, 0, 0, .7);
 }
-
 .d-bloc .panel .divider-h span,
 .l-bloc .divider-h span {
     border-color: rgba(0, 0, 0, .1);
 }
-
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
 .l-bloc .navbar a,
@@ -279,7 +276,6 @@ a:hover {
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
 }
-
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
 .l-bloc .navbar a:hover,
@@ -297,11 +293,9 @@ a:hover {
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
 }
-
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
 }
-
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
@@ -970,6 +964,95 @@ footer a:visited {
     text-transform: uppercase;    
 }
 
+/* Page contact */
+.contact-form {    
+    width: 100vw;
+    height: 100vh;
+    padding: 0 0 0 10%;
+    font-family: 'WorkSans', Helvetica, sans-serif;    
+}
+
+.contact-form-header-title {
+    display: flex;    
+    flex-wrap: nowrap;
+    margin: 0 0 0 -10%;
+    padding: 3vw 0 3vw 10%;    
+    background-color: #F4861E; 
+}
+
+.contact-form-header .panther-icon {
+    margin: 0 5vw 0 0;
+}
+
+.contact-form-header h2 {
+    margin-block-start: -0.83em;
+    margin-block-end: -0.83em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
+    margin: 7vw 0 0 0;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Merienda', cursive, serif;
+    font-size: 35px;
+}
+
+.contact-form-header h3 {
+    margin-block-start: -1em;
+    margin-block-end: -1em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
+    margin: 1vw 0 0 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.contact-form-header p {
+    width: 85%;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .contact-form-header h2 {
+        font-size: 45px;
+    }
+
+    .contact-form-header h3 {
+        font-size: 22px;
+    }
+
+    .contact-form-header p {        
+        font-size: 22px;    
+    }
+}
+
+.form-group {
+    margin: 20px 0 0 0;
+}
+
+.asterisk {
+    color: #F4861E;
+}
+
+.contact-form input, select, textarea {    
+    border: 3px solid #F4861E;
+    border-radius: 7px;    
+    color:#1E21F4;
+}
+
+textarea {
+    margin: 14px 0 0 0;
+    font-family: 'WorkSans', Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contact-form input {
+    font-size: 20px;
+}
+
+.contact-form input:focus, select:focus {
+    outline: 2px solid dodgerblue;
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -1445,7 +1528,7 @@ Tous les autres boutons sont éliminés. */
     opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
 }
 
-.contact-button-desktop {
+.contact-button-desktop, .submit-button-desktop {
     z-index: 1;
     position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
     margin: 3vw 0 0 2.5em;
@@ -1462,16 +1545,20 @@ Tous les autres boutons sont éliminés. */
     color: #FFFFFF;
 }
 
-.contact-button-desktop:hover {
+#submit-button-desktop {
+    margin: 3vw 0 3vw 5.5em;
+}
+
+.contact-button-desktop:hover, .submit-button-desktop:hover {
     box-shadow: 0 0vw 0.8vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
 }
 
-.contact-button-desktop:active {
+.contact-button-desktop:active, .submit-button-desktop:active {
     transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
 }
 
-.contact-button-desktop__hover-effect {
+.contact-button-desktop__hover-effect, .submit-button-desktop__hover-effect {
     z-index: -1;
     position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
     top: 0;
@@ -1484,8 +1571,18 @@ Tous les autres boutons sont éliminés. */
     transition: opacity 350ms ease-in-out;
 }
 
-.contact-button-desktop:hover .contact-button-desktop__hover-effect {
+.contact-button-desktop:hover .contact-button-desktop__hover-effect, .submit-button-desktop:hover .submit-button-desktop__hover-effect {
     opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+@media (min-width: 768px) {
+    .form-elements {
+        display: flex;        
+    }
+
+    #submit-button-desktop {
+        margin: 287px 0 0 2.5em;
+    }
 }
 
 @media (max-width: 1023px) {
