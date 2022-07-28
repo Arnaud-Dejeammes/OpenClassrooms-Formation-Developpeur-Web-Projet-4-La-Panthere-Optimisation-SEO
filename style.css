@@ -342,8 +342,10 @@ header {
 } /* Commentaire SEO : */
 
 .panther-icon {
-    position: relative;
-    top: 37%;    
+    display: block;
+    /* position: relative; */
+    /* top: 37%; */
+    margin: 3vw auto 0 auto;
     background-color: #FFFFFF;
 } /* Commentaire SEO : style créér pour le nouveau logo de La Panthere.
 La taille respecte la taille originale en format mobile (largeur de la fenêtre du navigateur réduite au maximum),
@@ -402,6 +404,16 @@ header h2 {
     }
 } /* Commentaire SEO : */
 
+@media (min-width: 1024px) {
+    .header-home-page h1 {
+        transform: translate(0, -65px)
+    }
+
+    .header-home-page h2 {
+        transform: translate(0, -95px)
+    }
+}
+
 /* Bloc 2 services */
 #bloc-2-services {
     padding: 50px 0 50px 0;
@@ -421,21 +433,36 @@ header h2 {
     }
 }
 
-.definition, .citation {
-    margin: 0 0 0 15vw;
+.definition, .citation {    
     width: 70vw;
     font-family: 'WorkSans', Helvetica, sans-serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     text-align: justify;
 }
 
+.definition {
+    margin: -35px 0 0 15vw;
+}
+
+.citation {
+    margin: 0 0 0 15vw;
+}
+
 @media (min-width: 1024px) {
-    .definition, .citation {
-        margin: 0 auto 0 auto;
+    .definition, .citation {        
         width: 580px;
         font-size: 1.5em;         
     }
+
+    .definition {
+        margin: 0 auto 0 auto;
+    }
+
+    .citation {
+        margin: 0 auto 0 auto;
+        transform: translate(-7.5vw, 0);
+    }    
 }
 
 .definition dfn, .citation strong {
@@ -443,7 +470,7 @@ header h2 {
 }
 
 .service {
-    margin: 3vw auto 7vw auto;
+    margin: 8vw auto 7vw auto;
     width: 70vw;
     font-family: 'WorkSans', Helvetica, sans-serif;
     color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
@@ -471,7 +498,7 @@ header h2 {
 }
 
 .service h3 {    
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -483,9 +510,8 @@ header h2 {
     }
 }
 
-.service p {
-    
-    font-size: 2.7vw;
+.service p {    
+    font-size: 3vw;
     text-align: justify
 }
 
@@ -536,19 +562,13 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 .paragraph-1 {
-    font-size: 3.55vw;
+    font-size: 3.5vw;
     font-weight: bold;
     color: #F4861E;
 }
 
-@media (min-width: 1024px) {
-    .paragraph-1 {
-        font-size: 1.9em;
-    }
-}
-
 .paragraph-2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: #FFFFFF;
 }
 
@@ -558,6 +578,10 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 @media (min-width: 1024px) {
+    .paragraph-1 {
+        font-size: 1.9em;
+    }
+
     .paragraph-2 {
         font-size: 1.4em;
     }
@@ -568,8 +592,12 @@ https://www.color-name.com/trendy-orange.color */
     
 }
 
+.bloc-diapo {
+    padding: 20px 0 100px 0;
+}
+
 .portfolio-title {
-    margin: 0 0 2em 15vw;
+    margin: 0 auto 2em auto;
     width: 70vw;
     font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3.35vw;
@@ -586,7 +614,7 @@ https://www.color-name.com/trendy-orange.color */
 
 .slideshow {
     display: flex;
-    /* overflow: hidden; */    
+    /* overflow: hidden; */  
 }
 
 .images-slides {
@@ -601,7 +629,7 @@ https://www.color-name.com/trendy-orange.color */
 .sliding {
     display: inline-flex;
     position: absolute;
-    top: 31vw;
+    /* top: 31vw; */
     margin: 0 0 2em 15vw;
     width: 70vw;
     /* width: 26em;
@@ -614,8 +642,14 @@ https://www.color-name.com/trendy-orange.color */
     /* margin: 0 auto 0 auto; */
 }
 
+@media (min-width: 1024px) {
+    .sliding {
+        /* margin: 0 auto 0 41%; */
+    }
+}
+
 .sliding-button {
-    margin: 0 auto 0 auto; 
+    margin: 0 auto 0 auto;
     width: 15px;
     height: 15px;
     background-color: #F4861E;
@@ -624,6 +658,13 @@ https://www.color-name.com/trendy-orange.color */
     cursor: pointer;
     transform: translate(0, 0em);
 }
+
+@media (min-width: 1024px) {
+    .sliding-button {
+        /* margin: 0 24px 0 24px; */
+    }
+}
+
 
 .sliding-button:hover {    
     border: 2px solid #492809;
@@ -670,7 +711,8 @@ https://www.color-name.com/trendy-orange.color */
     list-style: none;
 } */
 
-.slide-frame {    
+.slide-frame {
+    margin: 30px 0 0 0;
     width: 100vw;
     height: fit-content;    
     transition: 450ms ease-out;    
@@ -802,10 +844,16 @@ https://www.color-name.com/trendy-orange.color */
 /* Bloc 5 bannière */
 #bloc-5-cta {
     font-family: 'WorkSans', Helvetica, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #F4861E;
     filter: drop-shadow(0 0 0.3vw #492809);
+}
+
+@media (min-width: 1024px) {
+    #bloc-5-cta {
+        font-size: 2.5em;
+    }
 }
 
 /* Footer */
@@ -827,7 +875,7 @@ footer a {
 
 .link:hover {
     color: dodgerblue;
-    filter: drop-shadow(0 0 0.3vw #492809);
+    /* filter: drop-shadow(0 0 0.3vw #492809); */
 }
 
 footer a:visited {
@@ -866,7 +914,7 @@ footer a:visited {
 
 #logo-instagram {
     top: 16%;
-    left: 23%;
+    left: 20%; /* 23%; */
 }
 
 .social-network-button {
@@ -919,7 +967,7 @@ footer a:visited {
 
 #logo-instagram-hover {
     top: 16%;
-    left: 23%;
+    left: 20%; /* 23%; */
 }
 
 .social-network-button__hover-effect {
@@ -957,6 +1005,12 @@ footer a:visited {
 
 .social-network-button:hover .social-network-button__hover-effect {
     transform: scale(1); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+}
+
+@media (min-width: 768px) {
+    #partners {
+        margin: 0 0 0 34%;
+    }
 }
 
 .partners-title {
@@ -1488,7 +1542,7 @@ Tous les autres boutons sont éliminés. */
     }
 } /* Commentaire SEO : */
 
-.contact-button-mobile {
+.contact-button-mobile, .submit-button-mobile {
     z-index: 1;
     position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
     margin: 1vw 0 0 1vw;
@@ -1502,16 +1556,16 @@ Tous les autres boutons sont éliminés. */
     fill: #FFFFFF
 } /* Commentaire SEO : */
 
-.contact-button-mobile:hover {
+.contact-button-mobile:hover, .submit-button-mobile:hover {
     box-shadow: 0 0vw 1vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
     transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
 }
 
-.contact-button-mobile:active {
+.contact-button-mobile:active, .submit-button-mobile:active {
     transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
 }
 
-.contact-button-mobile__hover-effect {
+.contact-button-mobile__hover-effect, .submit-button-mobile__hover-effect {
     z-index: -1;
     position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
     top: 0;
@@ -1524,7 +1578,7 @@ Tous les autres boutons sont éliminés. */
     transition: opacity 350ms ease-in-out;    
 }
 
-.contact-button-mobile:hover .contact-button-mobile__hover-effect {
+.contact-button-mobile:hover .contact-button-mobile__hover-effect, .submit-button-mobile:hover .submit-button-mobile__hover-effect {
     opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
 }
 
@@ -1545,8 +1599,18 @@ Tous les autres boutons sont éliminés. */
     color: #FFFFFF;
 }
 
+#submit-button-mobile {
+    margin: 1em 0 5% 33%;
+}
+
 #submit-button-desktop {
-    margin: 3vw 0 3vw 5.5em;
+    margin: 5vw 0 3vw 5.5em;
+}
+
+@media (min-width: 768px) {
+    #submit-button-desktop {        
+        transform: translate(20%, 50%);        
+    }
 }
 
 .contact-button-desktop:hover, .submit-button-desktop:hover {
@@ -1575,7 +1639,7 @@ Tous les autres boutons sont éliminés. */
     opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .form-elements {
         display: flex;        
     }
@@ -1586,13 +1650,13 @@ Tous les autres boutons sont éliminés. */
 }
 
 @media (max-width: 1023px) {
-    .contact-button-desktop {
+    .contact-button-desktop, .submit-button-desktop {
         display: none;
     }
 } /* Commentaire SEO : */
 
 @media (min-width: 1024px) {
-    .contact-button-mobile {
+    .contact-button-mobile, .submit-button-mobile {
         display: none;
     }
 } /* Commentaire SEO : */
