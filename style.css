@@ -12,11 +12,11 @@ dfn, em, strong {
     font-style: normal;
 } /* Commentaire SEO : conserve le fond sémantique à destination des algorithmes sans que s'applique un style css particulier. */
 
-dfn {
+dfn, .slideshow-card em {
     font-weight: bold;
 } /* Commentaire SEO : */
 
-.definition strong {
+.definition strong, .definition em, .citation em, .paragraph-2 em {
     font-weight: normal;
 }
 
@@ -38,7 +38,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
 }
 
 @media (max-width: 1023px) {
@@ -312,7 +312,7 @@ a:hover {
     margin-top: 80px;
 }
 
-.row-no-gutters {
+/* .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
 }
@@ -321,7 +321,7 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
-}
+} */
 
 /* Header */
 header {
@@ -347,6 +347,7 @@ header {
     /* top: 37%; */
     margin: 3vw auto 0 auto;
     background-color: #FFFFFF;
+    fill: #492809;
 } /* Commentaire SEO : style créér pour le nouveau logo de La Panthere.
 La taille respecte la taille originale en format mobile (largeur de la fenêtre du navigateur réduite au maximum),
 puis s'adapte en s'agrandissant en fonction de la résolution. */
@@ -373,7 +374,7 @@ puis s'adapte en s'agrandissant en fonction de la résolution. */
     font-size: 32px;
 } */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
-h1 {
+header h1 {
     font-family: 'Merienda', cursive, serif;
     font-size: 7.5vw; /* 6.5vw */
     color: #F4861E;
@@ -594,21 +595,37 @@ https://www.color-name.com/trendy-orange.color */
 
 .bloc-diapo {
     padding: 20px 0 100px 0;
+    overflow-x: hidden;
 }
 
-.portfolio-title {
+.portfolio-introduction, .portfolio-title {
     margin: 0 auto 2em auto;
-    width: 70vw;
-    font-family: 'WorkSans', Helvetica, sans-serif;
-    font-size: 3.35vw;
+    font-family: 'WorkSans', Helvetica, sans-serif;    
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.portfolio-introduction {    
+    width: 70vw;
+    font-size: 3.35vw;
     color: #180D03;    
 }
 
+.portfolio-title {
+    margin-block-start: -0.83em;
+    margin-block-end: -0.83em;
+    margin: 0 auto 2em auto;
+    font-size: 5.35vw;
+    color: #F4861E;
+}
+
 @media (min-width: 1024px) {
-    .portfolio-title {
+    .portfolio-introduction {
         font-size: 1.4em;
+    }
+
+    .portfolio-title {
+        font-size: 3.3em;
     }
 }
 
@@ -793,23 +810,19 @@ https://www.color-name.com/trendy-orange.color */
 
 .slideshow-card-body-title {
     height: 150px;
-    font-size: .9em;
+    font-size: 1.1em;
+    color: #1E21F4;
     text-transform: uppercase;
-    transition: 900ms;    
+    transition: 900ms;
 }
 
-.slideshow-card-body-title a {
-    text-decoration: none;
-    color: #1E21F4; /* dodgerblue; */
+.slideshow-card-body-title h3 {    
+     /* dodgerblue; */
 }
 /* Split-Complementary Palette
 As per the RGB color wheel, the split-complementary colors of Trendy Orange (#F4861E) are #1EF4F1 (Fluorescent Blue) and #1E21F4 (Bluebonnet). A split-complementary color palette consists of the main color along with those on either side (30°) of the complementary color. Based on our research, usage of split-complementary palettes is on the rise online, especially in graphics and web sites designs. It may be because it is not as contrasting as the complementary color palette and, hence, results in a combination which is pleasant to the eyes.
 https://www.color-name.com/trendy-orange.color */
 
-.slideshow-card-body-title:visited {
-    text-decoration: none;
-    color:#1E21F4; /* dodgerblue; */
-}
 
 .slideshow-card-body-description {
     font-size: 1.1em;
@@ -871,6 +884,10 @@ footer a {
     text-decoration: none;
     font-weight: bold;
     color: #1E21F4;
+}
+
+.link {
+    line-height: 210%;
 }
 
 .link:hover {
@@ -1026,19 +1043,23 @@ footer a:visited {
     font-family: 'WorkSans', Helvetica, sans-serif;    
 }
 
+.contact-form-header {
+    color: #492809;
+}
+
 .contact-form-header-title {
     display: flex;    
     flex-wrap: nowrap;
     margin: 0 0 0 -10%;
     padding: 3vw 0 3vw 10%;    
-    background-color: #F4861E; 
+    background-color: #F4861E;    
 }
 
 .contact-form-header .panther-icon {
     margin: 0 5vw 0 0;
 }
 
-.contact-form-header h2 {
+.contact-form-header h1 {
     margin-block-start: -0.83em;
     margin-block-end: -0.83em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
     margin: 7vw 0 0 0;
@@ -1048,7 +1069,7 @@ footer a:visited {
     font-size: 35px;
 }
 
-.contact-form-header h3 {
+.contact-form-header h2 {
     margin-block-start: -1em;
     margin-block-end: -1em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
     margin: 1vw 0 0 0;
@@ -1066,11 +1087,11 @@ footer a:visited {
 }
 
 @media (min-width: 768px) {
-    .contact-form-header h2 {
+    .contact-form-header h1 {
         font-size: 45px;
     }
 
-    .contact-form-header h3 {
+    .contact-form-header h2 {
         font-size: 22px;
     }
 
@@ -1081,6 +1102,10 @@ footer a:visited {
 
 .form-group {
     margin: 20px 0 0 0;
+}
+
+.form-group label, .note {
+    color: #492809;
 }
 
 .asterisk {
