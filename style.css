@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Merienda';
     src: url("fonts/Merienda-Regular.woff2") format("woff2");
-} /* Commentaire SEO : */
+}
 
 @font-face {
     font-family: 'WorkSans';
     src: url("fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
-} /* Commentaire SEO : la police correspond à celle qui est identifiée dans le sous-titre du logo original. Il s'agit d'une police à la fois lisible et au design moderne. */
+}
 
 dfn, em, strong {
     font-style: normal;
-} /* Commentaire SEO : conserve le fond sémantique à destination des algorithmes sans que s'applique un style css particulier. */
+}
 
 dfn, .slideshow-card em {
     font-weight: bold;
-} /* Commentaire SEO : */
+}
 
 .definition strong, .definition em, .citation em, .paragraph-2 em {
     font-weight: normal;
@@ -22,7 +22,7 @@ dfn, .slideshow-card em {
 
 q {
     quotes: none;
-} /* Commentaire SEO : */
+}
 
 ul {
     padding: 0;
@@ -32,11 +32,10 @@ ul {
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: #FFFFFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
     background-attachment: fixed;
     background-repeat: no-repeat;    
 }
@@ -45,32 +44,23 @@ body {
     body {
         background-size: 120%;
     }
-} /* Commentaire SEO : */
+}
 
 @media (min-width: 1024px) {
     body {
         background-size: 100%;
     }
-} /* Commentaire SEO : */
+}
 
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: none;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -102,301 +92,76 @@ a:hover {
     padding: 20px 50px;
 }
 
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge,
-.bg-b-edge,
-.bg-tl-edge,
-.bg-bl-edge,
-.bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
-}
-
-.bg-repeat {
-    background: repeat;
-}
-
-.bg-t-edge {
-    background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-} /* Commentaire SEO : */ /* A supprimer. */
-
-/* .texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-} */ /* Commentaire SEO : */
-
 .b-parallax {
     background-attachment: fixed;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
-
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc .icon-round,
-.d-bloc .icon-square,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
-}
-
-.d-bloc .a-btn,
-/* .d-bloc .navbar a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-.d-bloc .navbar-brand /* ,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h1 a, */
-/* .d-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h3 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* ,
-.d-bloc p a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ {
-    color: rgba(255, 255, 255, .6);
-}
-
-/* .d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h3 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover * / /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* ,
-.d-bloc p a:hover */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ /* {
-    color: rgba(255, 255, 255, 1);
-} */
-
-.d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
-}
-
-.d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
-}
-
-.d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
-}
-
-.d-bloc .panel button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc .panel icon {
-    border-color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc .panel .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
-}
-
-.d-bloc .panel .a-btn {
-    color: rgba(0, 0, 0, .6);
-}
-
-.d-bloc .panel .a-btn:hover {
-    color: rgba(0, 0, 0, 1);
-}
-
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
-}
-
-/* .d-bloc .panel,
-.l-bloc {
-    color: rgba(0, 0, 0, .5);
-} */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
-
-/* .d-bloc .panel button:hover,
-.l-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-.l-bloc .icon-round,
-.l-bloc .icon-square,
-.l-bloc .icon-rounded,
-.l-bloc .icon-semi-rounded-a,
-.l-bloc .icon-semi-rounded-b {
-    border-color: rgba(0, 0, 0, .7);
-}
-.d-bloc .panel .divider-h span,
-.l-bloc .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
-}
-.d-bloc .panel .a-btn,
-.l-bloc .a-btn,
-.l-bloc .navbar a,
-.l-bloc .navbar-brand,
-.l-bloc a .icon-sm,
-.l-bloc a .icon-md,
-.l-bloc a .icon-lg,
-.l-bloc a .icon-xl, */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
-/* .l-bloc h1 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .l-bloc h2 a, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .l-bloc h3 a,
-.l-bloc h4 a,
-.l-bloc h5 a,
-.l-bloc h6 a,
-.l-bloc p a {
-    color: rgba(0, 0, 0, .6);
-}
-.d-bloc .panel .a-btn:hover,
-.l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
-.l-bloc .navbar-brand:hover,
-.l-bloc a:hover .icon-sm,
-.l-bloc a:hover .icon-md,
-.l-bloc a:hover .icon-lg,
-.l-bloc a:hover .icon-xl, */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
-/* .l-bloc h1 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .l-bloc h2 a:hover, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* .l-bloc h3 a:hover,
-.l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
-.l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
-}
-.l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
-}
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover,
-.l-bloc .btn-wire,
-.l-bloc .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
-} */ /* Commentaire SEO : annulation de la couleur pour la remplacer avec celle du nuancier adapté. */
-
-.voffset {
-    margin-top: 30px;
-}
-
-.voffset-lg {
-    margin-top: 80px;
-}
-
-/* .row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-} */
-
 /* Header */
 header {
-    z-index: 1;    
-    overflow: visible;    
-} /* Commentaire SEO : */
+    z-index: 1;
+    overflow: visible;
+}
 
 @media (max-width: 1023px) {
     header {
         transform: translate(0, -26%);
     }
-} /* Commentaire SEO : */
+}
 
 @media (min-width: 1024px) {
     header {
-        transform: translate(0, -18%);        
+        transform: translate(0, -18%);
     }
-} /* Commentaire SEO : */
+}
 
 .panther-icon {
-    display: block;
-    /* position: relative; */
-    /* top: 37%; */
+    display: block;    
     margin: 3vw auto 0 auto;
     background-color: #FFFFFF;
     fill: #492809;
-} /* Commentaire SEO : style créér pour le nouveau logo de La Panthere.
-La taille respecte la taille originale en format mobile (largeur de la fenêtre du navigateur réduite au maximum),
-puis s'adapte en s'agrandissant en fonction de la résolution. */
+}
 
 @media (max-width: 1023px) {
     .panther-icon {
         width: 21vw;
         height: 21vw;
-        border-radius: 9.5vw; /* Commentaire SEO : le logo original n'est pas tout à fait rond. */
+        border-radius: 9.5vw;
         padding: 3vw;
     }
-} /* Commentaire SEO : */
+}
 
 @media (min-width: 1024px) {
     .panther-icon {
         width: 15.5em;
         height: 15.5em;
-        border-radius: 7em; /* Commentaire SEO : le logo original n'est pas tout à fait rond. */
+        border-radius: 7em;
         padding: 2.2em;  
     }
-} /* Commentaire SEO : */
-
-/* #bloc-1-hero h1 {
-    font-size: 32px;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+}
 
 header h1 {
     font-family: 'Merienda', cursive, serif;
     font-size: 7.5vw; /* 6.5vw */
     color: #F4861E;
     line-height: 1.2em;
-    filter: drop-shadow(0 0 0.3vw #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-} /* Commentaire SEO : */
+    filter: drop-shadow(0 0 0.3vw #492809);
+}
 
 @media (min-width: 1024px) {
     h1 {
         font-size: 5.5em;
     }
-} /* Commentaire SEO : */
+}
 
 header h2 {
     /* width: fit-content; */
-    margin-block-start: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet et permettent de s'approcher du logo original. */
-    margin-block-end: -0.83em; /* Commentaire SEO : les valeurs contrebalancent les marges par défaut de user agent stylesheet. */
+    margin-block-start: -0.83em;
+    margin-block-end: -0.83em;
     font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3.5vw; /* 3vw */
     color: #F4861E;
     text-transform: uppercase;
-    filter: drop-shadow(0 0 0.3vw #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    filter: drop-shadow(0 0 0.3vw #492809);
 }
 
 @media (min-width: 1024px) {
@@ -438,7 +203,7 @@ header h2 {
     width: 70vw;
     font-family: 'WorkSans', Helvetica, sans-serif;
     font-size: 3.5vw;
-    color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    color: #492809;
     text-align: justify;
 }
 
@@ -474,7 +239,7 @@ header h2 {
     margin: 8vw auto 7vw auto;
     width: 70vw;
     font-family: 'WorkSans', Helvetica, sans-serif;
-    color: #180D03; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    color: #492809;
 }
 
 @media (min-width: 1024px) {
@@ -487,9 +252,8 @@ header h2 {
 .service-icon {
     position: relative;    
     left: 43%;
-    filter: drop-shadow(1px 1px 2px #492809); /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    fill: #1E21F4;
-    /*dodgerblue; */ /* Couleur complémentaire du Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
+    filter: drop-shadow(1px 1px 2px #492809);
+    fill: #1E21F4;    
 }
 
 @media (min-width: 1024px) {
@@ -538,15 +302,12 @@ header h2 {
 
 .citation a {
     text-decoration: none;
-    color: #1E21F4; /* dodgerblue; */
+    color: #1E21F4;
 }
-/* Split-Complementary Palette
-As per the RGB color wheel, the split-complementary colors of Trendy Orange (#F4861E) are #1EF4F1 (Fluorescent Blue) and #1E21F4 (Bluebonnet). A split-complementary color palette consists of the main color along with those on either side (30°) of the complementary color. Based on our research, usage of split-complementary palettes is on the rise online, especially in graphics and web sites designs. It may be because it is not as contrasting as the complementary color palette and, hence, results in a combination which is pleasant to the eyes.
-https://www.color-name.com/trendy-orange.color */
 
 .citation a:visited {
     text-decoration: none;
-    color:#1E21F4; /* dodgerblue; */
+    color:#1E21F4;
 }
 
 /* Bloc 3 what-i-do */
@@ -589,10 +350,6 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 /* Bloc 4 portfolio */
-#bloc-4-portfolio {
-    
-}
-
 .bloc-diapo {
     padding: 20px 0 100px 0;
     overflow-x: hidden;
@@ -608,7 +365,7 @@ https://www.color-name.com/trendy-orange.color */
 .portfolio-introduction {    
     width: 70vw;
     font-size: 3.35vw;
-    color: #180D03;    
+    color: #492809;    
 }
 
 .portfolio-title {
@@ -630,8 +387,7 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 .slideshow {
-    display: flex;
-    /* overflow: hidden; */  
+    display: flex;     
 }
 
 .images-slides {
@@ -645,24 +401,9 @@ https://www.color-name.com/trendy-orange.color */
 
 .sliding {
     display: inline-flex;
-    position: absolute;
-    /* top: 31vw; */
+    position: absolute;    
     margin: 0 0 2em 15vw;
-    width: 70vw;
-    /* width: 26em;
-    padding: 3em 3em 3em 0vw; */
-    
-    /* left: 37%; */
-    
-    /* transform: translate(0, -30px); */
-    /* background-color: #364577; */
-    /* margin: 0 auto 0 auto; */
-}
-
-@media (min-width: 1024px) {
-    .sliding {
-        /* margin: 0 auto 0 41%; */
-    }
+    width: 70vw;    
 }
 
 .sliding-button {
@@ -676,13 +417,6 @@ https://www.color-name.com/trendy-orange.color */
     transform: translate(0, 0em);
 }
 
-@media (min-width: 1024px) {
-    .sliding-button {
-        /* margin: 0 24px 0 24px; */
-    }
-}
-
-
 .sliding-button:hover {    
     border: 2px solid #492809;
     transform: scale(1.3);
@@ -690,43 +424,20 @@ https://www.color-name.com/trendy-orange.color */
 }
 
 #journal_local:checked~.first {
-    margin: 0 0 0 0
-    
+    margin: 30px 0 0 0;    
 }
 
 #photographes:checked~.first {
-    margin: 0 0 0 -100vw;    
+    margin: 30px 0 0 -100vw;    
 }
 
 #voyageur:checked~.first {
-    margin: 0 0 0 -200vw;
+    margin: 30px 0 0 -200vw;
 }
 
 #agence_mariage:checked~.first {
-    margin: 0 0 0 -300vw;
+    margin: 30px 0 0 -300vw;
 }
-
-/* @media (min-width: 1024px) {
-    #journal_local:checked~.first {
-        margin-left: 0;
-    }
-    
-    #photographes:checked~.first {
-        margin-left: -70vw;
-    }
-    
-    #voyageur:checked~.first {
-        margin-left: -140vw;
-    }
-    
-    #agence_mariage:checked~.first {
-        margin-left: -210vw;
-    }
-} */
-
-/* .slideshow li {
-    list-style: none;
-} */
 
 .slide-frame {
     margin: 30px 0 0 0;
@@ -738,61 +449,47 @@ https://www.color-name.com/trendy-orange.color */
 .slideshow-card {
     position: relative;
     top: 5vw;
-    margin: 0 auto 0 auto;
-    /* transform: translate(15vw, 0); */
-    width: 26em;
-    height: 37em;
-    border-radius: 2em;    
+    margin: 0 auto 0 auto;    
+    width: 320px;
+    height: 430px;
+    border-radius: 2em;
     box-shadow: 0 1vw 2vw 1vw #d9d9d9;
-    padding: 1em 0 0 0;
-    overflow: hidden;    
-}
-
-/* @media (min-width: 1024px) {
-    .slideshow-card {        
-        margin: 0 50vw 0 30vw;
-        width: 20em;
-        height: 25em;
-        border-radius: 0.85vw;
-        box-shadow: 0 0.3vw 0.6vw 0.3vw #d9d9d9;
-        padding: 0.4em 0 0 0;
-    }
-} */
-  
-/* .slideshow-card */ .slideshow-card-image {
-    margin: 0 auto 0 auto;
-    width: 95%;
-    border-radius: 1.2em 1.2em 1.2em 1.2em;
+    cursor: pointer;
     overflow: hidden;
 }
 
-/* @media (min-width: 1024px) {
-    .slideshow-card .slideshow-card-image {
-        height: 12vw;
-        border-radius: 0.85vw 0.85vw 0 0;
-    }
-} */
-
-.slideshow-card-image img {
+.slideshow-photo {
     position: relative;
-    width: 110%;
-    transition: width 900ms 100ms ease-in-out;
+    width: 320px;
+    height: 320px;
+    transition: 900ms 100ms ease-in-out;
 }
 
-.slideshow-card:hover img {
-    width: 100%;
+.slideshow-card-body {
+    transition: 900ms 100ms ease-in-out;
 }
 
 .slideshow-card:hover .slideshow-card-body-title {
-    height: 70px;
+    margin-block-start: -.9em;
 }
 
-.slideshow-photo {
-    width: 100%;
-    height: 100%;
+.slideshow-card:hover #slideshow-title-1 {
+    height: 77px;
 }
 
-/* .slideshow-card */ .slideshow-card-body {
+.slideshow-card:hover #slideshow-title-2, .slideshow-card:hover #slideshow-title-3 {
+    height: 67px;
+}
+
+.slideshow-card:hover #slideshow-title-4 {
+    height: 57px;
+}
+
+.slideshow-card:hover .slideshow-photo, .slideshow-card:hover .slideshow-card-body {    
+    transform: translate(0, -50px);
+}
+
+.slideshow-card-body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -800,13 +497,6 @@ https://www.color-name.com/trendy-orange.color */
     font-family: 'WorkSans', Helvetica, sans-serif;    
     text-align: justify;
 }
-  
-/* @media (min-width: 1024px) {
-.slideshow-card .slideshow-card-body {
-    width: ;
-    height: ;
-    }
-} */
 
 .slideshow-card-body-title {
     height: 150px;
@@ -816,42 +506,13 @@ https://www.color-name.com/trendy-orange.color */
     transition: 900ms;
 }
 
-.slideshow-card-body-title h3 {    
-     /* dodgerblue; */
+.slideshow-card-body-description {
+    color: #492809;
 }
-/* Split-Complementary Palette
-As per the RGB color wheel, the split-complementary colors of Trendy Orange (#F4861E) are #1EF4F1 (Fluorescent Blue) and #1E21F4 (Bluebonnet). A split-complementary color palette consists of the main color along with those on either side (30°) of the complementary color. Based on our research, usage of split-complementary palettes is on the rise online, especially in graphics and web sites designs. It may be because it is not as contrasting as the complementary color palette and, hence, results in a combination which is pleasant to the eyes.
-https://www.color-name.com/trendy-orange.color */
 
 
 .slideshow-card-body-description {
     font-size: 1.1em;
-}
-
-.slideshow-card .slideshow-card-body .slideshow-card-body-title {
-    /* height: 50%;
-    width: 76.8vw;
-    padding: 0 0 0 3.7333333333vw; */
-}
-
-@media (min-width: 1024px) {
-.slideshow-card .slideshow-card-body .slideshow-card-body-title {
-    /* width: 19.7802197802vw;
-    padding: 0 0 0 0.9615384615vw; */
-    }
-}
-
-.slideshow-card .slideshow-card-body .slideshow-card-body-place {
-    /* height: 50%;
-    width: 76.8vw;
-    padding: 0 0 0 3.7333333333vw; */
-}
-
-@media (min-width: 1024px) {
-    .slideshow-card .slideshow-card-body .slideshow-card-body-place {
-        /* width: 19.7802197802vw;
-        padding: 0 0 0 0.9615384615vw; */
-    }
 }
 
 /* Bloc 5 bannière */
@@ -891,17 +552,12 @@ footer a {
 }
 
 .link:hover {
-    color: dodgerblue;
-    /* filter: drop-shadow(0 0 0.3vw #492809); */
+    color: dodgerblue;    
 }
 
 footer a:visited {
     text-decoration: none;
     color: #1E21F4;
-}
-
-.social-networks-list {
-    /* list-style: none; */
 }
 
 #logo-twitter, #logo-dribbble, #logo-instagram {
@@ -931,12 +587,12 @@ footer a:visited {
 
 #logo-instagram {
     top: 16%;
-    left: 20%; /* 23%; */
+    left: 20%;
 }
 
 .social-network-button {
     z-index: 1;
-    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    position: relative;
     margin: 0 0 20px 0;
     width: 50px;
     height: 50px;
@@ -954,7 +610,7 @@ footer a:visited {
 
 .logo-social-hover {
     position: absolute;
-    fill: #F4861E; /* #FFFFFF; */
+    fill: #F4861E;
     filter: drop-shadow(0 0 0.3vw #492809);
 }
 
@@ -978,25 +634,25 @@ footer a:visited {
 }
 
 #logo-dribbble-hover {
-    top: 21%; /* 18 25 */
+    top: 21%;
     left: 22%;
 }
 
 #logo-instagram-hover {
     top: 16%;
-    left: 20%; /* 23%; */
+    left: 20%;
 }
 
 .social-network-button__hover-effect {
     z-index: -1;
-    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;    
     border-radius: 50vw;
-    box-shadow: 0 0 2vw 0 #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */     
-    transform: scale(0); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    box-shadow: 0 0 2vw 0 #492809;
+    transform: scale(0);
     transition: transform 400ms ease-in-out;
 }
 
@@ -1017,11 +673,11 @@ footer a:visited {
 }
 
 .social-network-button:hover .logo-social {
-    transform: scale(0); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    transform: scale(0);
 }
 
 .social-network-button:hover .social-network-button__hover-effect {
-    transform: scale(1); /* Commentaire SEO : choix de "transform" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    transform: scale(1);
 }
 
 @media (min-width: 768px) {
@@ -1036,9 +692,7 @@ footer a:visited {
 }
 
 /* Page contact */
-.contact-form {    
-    width: 100vw;
-    height: 100vh;
+.contact-form {
     padding: 0 0 0 10%;
     font-family: 'WorkSans', Helvetica, sans-serif;    
 }
@@ -1050,7 +704,7 @@ footer a:visited {
 .contact-form-header-title {
     display: flex;    
     flex-wrap: nowrap;
-    margin: 0 0 0 -10%;
+    margin: 0 0 0 -12%;
     padding: 3vw 0 3vw 10%;    
     background-color: #F4861E;    
 }
@@ -1061,17 +715,27 @@ footer a:visited {
 
 .contact-form-header h1 {
     margin-block-start: -0.83em;
-    margin-block-end: -0.83em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
+    margin-block-end: -0.83em;
     margin: 7vw 0 0 0;
     width: fit-content;
     height: fit-content;
     font-family: 'Merienda', cursive, serif;
     font-size: 35px;
+    text-decoration: none;
+}
+
+.contact-form-header-title-text a {
+    color: #492809;
+    text-decoration: none;
+}
+
+.contact-form-header-title-text a:visited {
+    color: #492809;
 }
 
 .contact-form-header h2 {
     margin-block-start: -1em;
-    margin-block-end: -1em; /* Commentaire SEO : contrer le style par défaut de user agent stylesheet. */
+    margin-block-end: -1em;
     margin: 1vw 0 0 0;
     width: fit-content;
     height: fit-content;
@@ -1121,7 +785,11 @@ footer a:visited {
 textarea {
     margin: 14px 0 0 0;
     font-family: 'WorkSans', Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 20px;    
+}
+
+textarea:focus {
+    outline: 2px solid dodgerblue;
 }
 
 .contact-form input {
@@ -1132,152 +800,26 @@ textarea {
     outline: 2px solid dodgerblue;
 }
 
-.navbar {
-    margin-bottom: 0;
-    z-index: 1;
+.contact-footer-infos {
+    padding: 20px 50px;
+    text-align: center;
 }
 
-.navbar-brand {
-    height: auto;
-    padding: 3px 15px;
-    font-size: 25px;
-    font-weight: normal;
-    font-weight: 600;
-    line-height: 44px;
+#contact-footer .social-networks-list {
+    text-align: center;
 }
 
-.navbar-brand img {
-    max-height: 200px;
-    margin: 0 5px 0 0;
-    display: inline;
-}
-
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-    margin: 0;
-}
-
-.navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
-    float: right;
-    z-index: 1;
-}
-
-.nav > li {
-    float: left;
-    margin-top: 4px;
-    font-size: 16px;
-}
-
-/* .navbar-nav .open .dropdown-menu > li > a {
-    text-align: inherit;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-/* .nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-
-.nav-invert .navbar .nav {
-    float: left;
-}
-
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-    float: right;
-    position: relative;
-    z-index: 2;
-}
-
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
+@media (min-width: 1024px) {
+    #contact-footer .social-networks-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; 
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
 
-/* .nav > li > .dropdown a {
-    background: none!important;
-    display: block;
-    padding: 14px 15px;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-nav .caret {
-    margin: 0 5px;
-}
-
-.dropdown-menu .dropdown-menu {
-    top: -8px;
-    left: 100%;
-}
-
-.dropdown-menu .dropmenu-flow-right {
-    top: 100%;
-    left: 0;
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.dropdown-menu .dropdown span {
-    border: 4px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
-    float: right;
+    #contact-footer .social-network-button {
+        margin: 0 1.5vw 20px 1.5vw;
+    }
 }
 
 .mg-md {
@@ -1288,48 +830,6 @@ nav .caret {
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
-}
-
-/* .btn {
-    margin: 0 5px 5px 0;
-} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
-
-.btn.pull-right {
-    margin: 0 0 5px 5px;
-}
-
-.btn-d,
-.btn-d:hover,
-.btn-d:focus {
-    color: #FFF;
-    background: rgba(0, 0, 0, .3);
-}
-
-button {
-    outline: none!important;
-}
-
-/* .btn-rd {
-    border-radius: 40px;
-} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
-
-/* .btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
-
-/* .icon-md {
-    font-size: 30px!important;
-} */ /* Commentaire SEO : suppression de la catégorie. */
-
-/* .icon-lg {
-    font-size: 60px!important;
-}  */ /* Commentaire SEO : suppression de la catégorie. */
-
-.sm-shadow {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
 .panel-sq,
@@ -1348,11 +848,6 @@ button {
 
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
-}
-
-.form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
 }
 
 .scrollToTop {
@@ -1375,157 +870,35 @@ button {
     opacity: 1;
 }
 
-/* a[data-lightbox] {
-    position: relative;
-    display: block;
-    text-align: center;
+
+label {    
+    font-family: "WorkSans", Helvetica, sans-serif;
+    font-size: 1em;
 }
 
-a[data-lightbox]:hover::before {
-    content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
-    color: #FFF;
-    font-weight: 100;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+#label-1 {
+    margin: 0 11.2em 0 0;
 }
 
-a[data-lightbox]:hover img {
-    opacity: 0.6;
-    -webkit-animation-fill-mode: none;
-    animation-fill-mode: none;
+#label-2 {
+    margin: 0 9em 0 0;
 }
 
-#lightbox-modal {
-    display: flex;
-    align-items: center;
+#label-3 {
+    margin: 0 9.7em 0 0;
 }
 
-#lightbox-modal .modal-dialog {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto 0;
+#label-4 {
+    margin: 0 6.6em 0 0;
 }
 
-#lightbox-modal .modal-dialog img {
-    max-height: 90vh;
-    margin: 0 auto;
-}
-
-.lightbox-caption {
-    padding: 20px;
-    color: #FFF;
-    background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
-}
-
-.close-lightbox {
-    color: #FFF;
-    font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 20;
-    background: rgba(0, 0, 0, .5);
-    border: none;
-    line-height: 30px;
-    padding: 0 9px 5px;
-    opacity: 0.3;
-}
-
-.close-lightbox:hover,
-.next-lightbox:hover,
-.prev-lightbox:hover {
-    opacity: 1.0;
-    color: #FFF;
-}
-
-.next-lightbox,
-.prev-lightbox {
-    font-size: 20px;
-    color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
-    transition: all .2s ease-in-out;
-    position: absolute;
-    top: 45%;
-    z-index: 1;
-    opacity: 0.4;
-}
-
-.next-lightbox {
-    padding: 6px 8px 1px 13px;
-    right: 25px;
-}
-
-.prev-lightbox {
-    padding: 6px 13px 1px 10px;
-    left: 25px;
-}
-
-.snapshot-lb .modal-body {
-    padding-bottom: 45px;
-}
-
-.snapshot-lb .lightbox-caption {
-    padding: 0;
-    color: rgba(0, 0, 0, .5);
-    background: none;
-} */ /* Commentaire SEO : suppression lightbox pour slideshow css */
-
-/* h1, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* h2, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-/* h3, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-h4,
-h5,
-h6,
-/* p, */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-label,
-.btn /*,
-a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */ {
-    font-family: "helvetica";
-    font-weight: 400;
-    /* color: #575757!important; */
-    color: #575757;
-    /* Commentaire SEO : suppression de "!important" afin de pouvoir appliquer la couleur de "header h2". */
+#label-5 {
+    margin: 0 3.1em 0 0;
 }
 
 .container {
     max-width: 1000px;
 }
-
-/* .hero-bloc-text {
-    font-size: 38px;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-.hero-bloc-text-sub {
-    font-size: 36px;
-}
-
-.statement-bloc-text {
-    line-height: 26px;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-    max-width: 520px;
-    margin: auto auto auto auto;
-}
-
-/* p {
-    font-size: 11px;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -1533,144 +906,127 @@ a */ /* Commentaire SEO : suppression du style de police pour appliquer le nouve
     margin: auto;
 }
 
-/* .h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-/* .cta-hero {
-    margin-top: 22px;
-    color: #FFFFFF!important;
-    text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
-    font-weight: 700;
-} *//* Commentaire SEO : suppression avec la création de .contact (<aside>) */
-
 .contact {
     z-index: 2;
     position: sticky;
     top: 0;
     width: fit-content;
-} /* Commentaire SEO : bouton unique pour accéder au formulaire de contact, présent tout au long de la page, en suivant son défilement.
-Tous les autres boutons sont éliminés. */
+}
 
 @media (max-width: 1023px) {
     .contact {
         transform: translate(0, 50%);
     }
-} /* Commentaire SEO : */
+}
 
 @media (min-width: 1024px) {
     .contact {
         transform: translate(0, 60%);
     }
-} /* Commentaire SEO : */
+}
 
 .contact-button-mobile, .submit-button-mobile {
     z-index: 1;
-    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    position: relative;
     margin: 1vw 0 0 1vw;
     width: 10vw;
     height: 10vw;
     border: none;
     border-radius: 50vw;
-    box-shadow: 0 0 2vw 0 #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
+    box-shadow: 0 0 2vw 0 #492809;
+    background: #F4861E;
     padding: 3vw;
-    fill: #FFFFFF
-} /* Commentaire SEO : */
+    fill: #FFFFFF;
+}
 
 .contact-button-mobile:hover, .submit-button-mobile:hover {
-    box-shadow: 0 0vw 1vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
+    box-shadow: 0 0vw 1vw 0vw #492809;
+    transform: scale(1.1);
 }
 
 .contact-button-mobile:active, .submit-button-mobile:active {
-    transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
+    transform: scale(0.95);
 }
 
 .contact-button-mobile__hover-effect, .submit-button-mobile__hover-effect {
     z-index: -1;
-    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;    
     border-radius: 50vw;
-    background: #F69E4B; /* Commentaire SEO : Tints of Trendy Orange Color (https://www.color-name.com/trendy-orange.color). */
-    opacity: 0; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    background: #F69E4B;
+    opacity: 0;
     transition: opacity 350ms ease-in-out;    
 }
 
 .contact-button-mobile:hover .contact-button-mobile__hover-effect, .submit-button-mobile:hover .submit-button-mobile__hover-effect {
-    opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    opacity: 1;
 }
 
 .contact-button-desktop, .submit-button-desktop {
     z-index: 1;
-    position: relative; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
-    margin: 3vw 0 0 2.5em;
+    position: relative;
     border: none;
     border-radius: 10vw;
-    box-shadow: 0 0vw 1.5vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    background: #F4861E; /* Commentaire SEO : Trendy Orange (https://www.color-name.com/trendy-orange.color). */
-    padding: .9em 1.5em .9em 1.5em; /* 1.35vw 3.15vw 1.35vw 3.15vw; /* Commentaire SEO : adaptation responsive ; prise en compte de proportions UX design. */
+    box-shadow: 0 0vw 1.5vw 0vw #492809;
+    background: #F4861E;
+    padding: .9em 1.5em .9em 1.5em;
     font-family: 'WorkSans', Helvetica, sans-serif;
-    font-size: 1.2em; /* 2vw; /* Commentaire SEO : adaptation responsive et lisibilité. */
+    font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .15em;
     color: #FFFFFF;
 }
 
+.contact-button-desktop {
+    margin: 3vw 0 0 2.5em;
+}
+
+.submit button {
+    cursor: pointer;
+}
+
 #submit-button-mobile {
-    margin: 1em 0 5% 33%;
+    margin: 1em 0 5% 40%;
 }
 
 #submit-button-desktop {
-    margin: 5vw 0 3vw 5.5em;
-}
-
-@media (min-width: 768px) {
-    #submit-button-desktop {        
-        transform: translate(20%, 50%);        
-    }
+    margin: 2em 0 2em 0;
 }
 
 .contact-button-desktop:hover, .submit-button-desktop:hover {
-    box-shadow: 0 0vw 0.8vw 0vw #492809; /* Commentaire SEO : "Shades of Trendy Orange" (https://www.color-name.com/trendy-orange.color). */
-    transform: scale(1.1); /* Commentaire SEO : le mouvement permet d'attirer le regard et suggère une interaction possible avec un contenu dynamique. */    
+    box-shadow: 0 0vw 0.8vw 0vw #492809;
+    transform: scale(1.1);
 }
 
 .contact-button-desktop:active, .submit-button-desktop:active {
-    transform: scale(0.95); /* Commentaire SEO : dynamisation des éléments interactifs. */
+    transform: scale(0.95);
 }
 
 .contact-button-desktop__hover-effect, .submit-button-desktop__hover-effect {
     z-index: -1;
-    position: absolute; /* Commentaire SEO : important pour le fonctionnement de l'effet. */
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     border-radius: 10vw;
-    background: #F69E4B; /* Commentaire SEO : Tints of Trendy Orange Color (https://www.color-name.com/trendy-orange.color). */
-    opacity: 0; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    background: #F69E4B;
+    opacity: 0;
     transition: opacity 350ms ease-in-out;
 }
 
 .contact-button-desktop:hover .contact-button-desktop__hover-effect, .submit-button-desktop:hover .submit-button-desktop__hover-effect {
-    opacity: 1; /* Commentaire SEO : choix d'"opacity" (étape "composition") pour ne pas passer par l'étape "paint", moins optimale pour le temps de calcul. */
+    opacity: 1;
 }
 
 @media (min-width: 1024px) {
     .form-elements {
-        display: flex;        
-    }
-
-    #submit-button-desktop {
-        margin: 287px 0 0 2.5em;
+        display: inline-flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -1678,43 +1034,22 @@ Tous les autres boutons sont éliminés. */
     .contact-button-desktop, .submit-button-desktop {
         display: none;
     }
-} /* Commentaire SEO : */
+}
 
 @media (min-width: 1024px) {
     .contact-button-mobile, .submit-button-mobile {
         display: none;
     }
-} /* Commentaire SEO : */
-
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
 }
 
-/* h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-/* h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
+.social {    
+    margin: auto auto auto auto;
+}
 
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-/* h1 {
-    color: #333333!important;
-} */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-
-h4 {
-    color: #333333!important;
 }
 
 .icons {
@@ -1723,7 +1058,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -1735,86 +1070,16 @@ h4 {
     margin-top: 50px;
 }
 
-.avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
-}
-
 .black-background {
-    /* background-color: rgba(165, 147, 99, 0.7); */ /* Commentaire SEO : */
     padding: 40px 40px 40px 40px;
-
     background-color: #492809;
     opacity: 0.7;
-    border-radius: 20px; /* Commentaire SEO : */
+    border-radius: 20px;
 }
-
-/* .bold-link {
-    font-weight: 900;
-    text-decoration: underline!important;
-} */ /* Commentaire SEO : */
 
 .bgc-white {
     background-color: #FFFFFF;
 }
-
-/* .bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
-.tc-white {
-    color: #F3976C!important;
-}  */ /* Commentaire SEO : suppression des couleurs inutiles et en conflit avec les nouvelles. */
-
-/* .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
-} */ /* Commentaire SEO : suppression avec la création de .contact (<aside>) */
-
-/* .ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.ltc-atomic-tangerine {
-    color: #F3976C!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
-}
-
-.icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
-} */ /* Commentaire SEO : suppression des couleurs inutilisées. */
-
-/* .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-} */ /* Commentaire SEO : suppression de fichiers avec peu d'intérêt visuel, voire gênant pour l'accessibilité. Allègement de données de navigation. */
-
-/* .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
-} */ /* Commentaire SEO : transfert dans le fichier html. */ /* A supprimer. */
-
-/* .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
-} */ /* Commentaire SEO : suppression de l'image, trop lourde, redondante avec l'image de fond et au format inadapté. */
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1827,15 +1092,6 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
     }
 }
 
@@ -1858,8 +1114,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
-    #hero-bloc {
+    .page-container {
         /* overflow-x: hidden; */ /* Commentaire SEO : suppression pour ne pas couper l'icône du header. */
         position: relative;
     }
@@ -1885,84 +1140,17 @@ h4 {
         /* overflow-x: hidden; */ /* Commentaire SEO : suppression pour ne pas couper l'icône du header. */
         position: relative;
     }
-    /* h1, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
-    /* h2, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
-    /* h3, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
-    h4,
-    h5,
-    h6,
-    /* p, */ /* Commentaire SEO : suppression du style pour appliquer le nouveau. */
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    }
+
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
-    }
-    .navbar.row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
-    .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
-        width: 100%;
-    }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
-    }
-    /* .dropdown .dropdown a .caret {
-        float: none;
-        margin: 5px 0 0 10px!important;
-        border: 4px solid black;
-        border-bottom-color: transparent;
-        border-right-color: transparent;
-        border-left-color: transparent;
-    } */ /* Commentaire SEO : suppression du style de police pour appliquer le nouveau. */
-    #hero-bloc .navbar .nav {
-        background: rgba(0, 0, 0, .8);
-    }
-    /* #hero-bloc .navbar .nav a {
-        color: rgba(255, 255, 255, .6);
-    } */
+    
     .hero {
         padding: 50px 0;
     }
     .hero-nav {
         left: -1px;
         right: -1px;
-    }
-    .navbar-collapse {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
-    .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
     }
     .bloc {
         padding-left: 0;
@@ -2000,13 +1188,7 @@ h4 {
     }
     .voffset-lg {
         margin-top: 30px;
-    }
-    /*form {
-        padding: 5px;
-    } */ /* Commentaire SEO : sélecteur supprimé pour éviter le décalage entre 768 et 1023px. */
-    .close-lightbox {
-        display: inline-block;
-    }
+    }    
     .blocsapp-device-iphone5 {
         background-size: 216px 425px;
         padding-top: 60px;
